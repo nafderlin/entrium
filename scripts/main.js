@@ -2040,6 +2040,7 @@ function exportData() {
   codeEl.value = "ENTRIUM_SAVE_V1:" + code;
 }
 
+
 function copyExportCode() {
   const el = document.getElementById("export-code");
   el.select();
@@ -2083,6 +2084,7 @@ function importData() {
     msg.textContent = "✕ Ошибка декодирования: " + e.message;
   }
 }
+
 
 function exportProfilePDF() {
   const p = obProfile || {};
@@ -2135,6 +2137,7 @@ function exportProfilePDF() {
       monthsHTML +
       "</div>";
   }
+
   const html = `<!DOCTYPE html><html><head><meta charset="utf-8">
     <title>Паспорт абитуриента · ${p.name || "Студент"}</title>
     <style>

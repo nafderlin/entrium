@@ -340,12 +340,15 @@
   html.light footer { color: var(--text4) !important; border-top-color: var(--border3) !important; }
   html.light footer em { color: var(--gold-ink) !important; }
 
-  * { margin: 0; padding: 0; box-sizing: border-box; }
+  * {
+    margin: 0; padding: 0; box-sizing: border-box; 
+    font-family: 'Inter', sans-serif; 
+  }
 
   body {
     background: var(--bg);
-    color: var(--text);
-    font-family: 'EB Garamond', Georgia, serif;
+    color: var(--text); 
+    font-family: 'Inter', sans-serif;
     font-size: 16px;
     min-height: 100vh;
     overflow-x: hidden;
@@ -360,7 +363,9 @@
   }
 
   /* ── GLOBAL TRANSITIONS ── */
-  *, *::before, *::after { transition: background-color 0.35s ease, border-color 0.35s ease, color 0.2s ease; }
+  *, *::before, *::after {
+    transition: background-color 0.35s ease, border-color 0.35s ease, color 0.2s ease; 
+  }
   /* exclude animations/transforms from transition */
   .loading-spinner, .country-btn, .nav-btn, .btn-primary, .btn-analyze, .btn-cta { transition: all 0.25s ease !important; }
 
@@ -459,14 +464,14 @@
   }
 
   .login-title {
-    font-family: 'Cinzel', serif;
+    font-family: Montserrat, sans-serif;
     font-size: 22px;
     letter-spacing: 0.25em;
     color: var(--gold2);
     margin-bottom: 6px;
   }
   .login-subtitle {
-    font-family: 'EB Garamond', serif;
+    font-family: Inter, sans-serif;
     font-style: italic;
     color: var(--cream3);
     font-size: 14px;
@@ -485,7 +490,7 @@
     background: var(--bg);
     border: 1px solid var(--border2);
     color: var(--text);
-    font-family: 'DM Mono', monospace;
+    font-family: Inter, sans-serif;
     font-size: 15px;
     padding: 14px 18px;
     letter-spacing: 0.2em;
@@ -507,7 +512,7 @@
     width: 100%;
     background: linear-gradient(135deg, var(--gold3), var(--gold));
     color: var(--bg);
-    font-family: 'Cinzel', serif;
+    font-family: Montserrat, sans-serif;
     font-size: 13px;
     letter-spacing: 0.2em;
     padding: 14px 24px;
@@ -541,7 +546,7 @@
   }
   .btn-logout {
     background: transparent; border: 1px solid var(--border2);
-    color: var(--cream3); font-family: 'DM Mono', monospace;
+    color: var(--cream3); font-family: Inter, sans-serif;
     font-size: 9px; letter-spacing: 0.12em; padding: 5px 12px;
     cursor: pointer; transition: all 0.2s; text-transform: uppercase;
   }
@@ -568,11 +573,11 @@
     margin-bottom: 6px;
   }
   .ob-prog-title {
-    font-family: 'DM Mono', monospace; font-size: 10px;
+    font-family: Inter, sans-serif; font-size: 10px;
     color: var(--cream3); letter-spacing: 0.1em;
   }
   .ob-prog-cta {
-    font-family: 'DM Mono', monospace; font-size: 9px;
+    font-family: Inter, sans-serif; font-size: 9px;
     color: var(--gold3); cursor: pointer; letter-spacing: 0.08em;
     background: none; border: none; padding: 0;
   }
@@ -615,12 +620,12 @@
     display: inline-flex; align-items: center; gap: 6px;
     padding: 0 16px; height: 44px;
     background: transparent; border: none;
-    font-family: 'DM Mono', monospace; font-size: 10px;
+    font-family: Inter, sans-serif; font-size: 10px;
     letter-spacing: 0.1em; text-transform: uppercase;
     color: var(--cream3); cursor: pointer;
     transition: all 0.15s; white-space: nowrap;
     border-bottom: 2px solid transparent;
-    position: relative;
+    position: relative; 
   }
   .nav-group-tab:hover { color: var(--cream); background: rgba(255,255,255,0.03); }
   .nav-group-tab.group-active {
@@ -640,7 +645,7 @@
     display: inline-flex; align-items: center;
     flex-shrink: 0;
     background: transparent; border: none;
-    color: var(--cream3); font-family: 'DM Mono', monospace;
+    color: var(--cream3); font-family: Inter, sans-serif;
     font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;
     padding: 0 13px; height: 44px;
     cursor: pointer; transition: all 0.15s;
@@ -657,7 +662,7 @@
   .sb-group-label {
     display: inline-flex; align-items: center;
     padding: 0 8px 0 14px; height: 44px;
-    font-family: 'DM Mono', monospace; font-size: 8px;
+    font-family: Inter, sans-serif; font-size: 8px;
     letter-spacing: 0.2em; color: var(--gold3); opacity: 0.55;
     text-transform: uppercase; flex-shrink: 0;
     border-left: 1px solid var(--border);
@@ -675,7 +680,7 @@
     padding: 0 16px; height: 44px; flex-shrink: 0;
     background: transparent; border: none;
     border-left: 1px solid var(--border);
-    color: var(--cream3); font-family: 'DM Mono', monospace;
+    color: var(--cream3); font-family: Inter, sans-serif;
     font-size: 10px; letter-spacing: 0.08em; text-transform: uppercase;
     cursor: pointer; transition: all 0.15s; white-space: nowrap;
   }
@@ -712,7 +717,7 @@
   }
   .mbn-btn .mbn-icon { font-size: 18px; line-height: 1; }
   .mbn-btn .mbn-label {
-    font-family: 'DM Mono', monospace; font-size: 8px;
+    font-family: Inter, sans-serif; font-size: 8px;
     letter-spacing: 0.06em; text-transform: uppercase;
   }
   .mbn-btn.active { color: var(--gold2); }
@@ -742,18 +747,18 @@
     filter: grayscale(0.5);
   }
   .empty-title {
-    font-family: 'Playfair Display', serif; font-size: 20px;
+    font-family: Inter, sans-serif; font-size: 20px;
     color: var(--cream2); font-weight: 400;
   }
   .empty-sub {
-    font-family: 'DM Mono', monospace; font-size: 11px;
+    font-family: Inter, sans-serif; font-size: 11px;
     color: var(--cream3); letter-spacing: 0.06em; max-width: 320px;
     line-height: 1.7;
   }
   .empty-action {
     margin-top: 8px; padding: 10px 24px;
     background: linear-gradient(135deg, var(--gold3), var(--gold));
-    color: var(--bg); font-family: 'DM Mono', monospace;
+    color: var(--bg); font-family: Inter, sans-serif;
     font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase;
     border: none; cursor: pointer; transition: all 0.2s;
   }
@@ -821,7 +826,7 @@
     background: rgba(201,168,76,0.08);
     border: 1px solid var(--gold3);
     color: var(--gold);
-    font-family: 'DM Mono', monospace;
+    font-family: Inter, sans-serif;
     font-size: 11px;
     letter-spacing: 0.2em;
     padding: 8px 18px;
@@ -830,7 +835,7 @@
   }
 
   .hero-title {
-    font-family: 'Playfair Display', serif;
+    font-family: Inter, sans-serif;
     font-size: clamp(42px, 6vw, 72px);
     line-height: 1.1;
     color: var(--cream);
@@ -843,7 +848,7 @@
     background-clip: text;
   }
   .hero-subtitle {
-    font-family: 'EB Garamond', serif;
+    font-family: Inter, sans-serif;
     font-style: italic;
     font-size: 20px;
     color: var(--cream3);
@@ -858,7 +863,7 @@
   .uni-badge {
     display: flex; align-items: center; gap: 8px;
     color: var(--cream3);
-    font-family: 'DM Mono', monospace;
+    font-family: Inter, sans-serif;
     font-size: 11px;
     letter-spacing: 0.08em;
   }
@@ -868,7 +873,7 @@
     display: flex; justify-content: center; gap: 16px;
   }
   .btn-cta {
-    font-family: 'Cinzel', serif;
+    font-family: Montserrat, sans-serif;
     font-size: 13px;
     letter-spacing: 0.15em;
     padding: 16px 36px;
@@ -909,7 +914,7 @@
   }
 
   .section-label {
-    font-family: 'DM Mono', monospace;
+    font-family: Inter, sans-serif;
     font-size: 10px;
     letter-spacing: 0.25em;
     color: var(--gold3);
@@ -924,7 +929,7 @@
   .form-group { margin-bottom: 16px; }
   .form-label {
     display: block;
-    font-family: 'DM Mono', monospace;
+    font-family: Inter, sans-serif;
     font-size: 10px;
     letter-spacing: 0.15em;
     color: var(--cream3);
@@ -936,7 +941,7 @@
     background: var(--bg);
     border: 1px solid var(--border);
     color: var(--text);
-    font-family: 'EB Garamond', serif;
+    font-family: Inter, sans-serif;
     font-size: 15px;
     padding: 10px 14px;
     outline: none;
@@ -970,7 +975,7 @@
   }
   .country-btn span {
     display: block;
-    font-family: 'DM Mono', monospace;
+    font-family: Inter, sans-serif;
     font-size: 8px;
     letter-spacing: 0.05em;
     margin-top: 3px;
@@ -993,7 +998,7 @@
     background: transparent;
     border: none;
     color: var(--cream3);
-    font-family: 'DM Mono', monospace;
+    font-family: Inter, sans-serif;
     font-size: 10px;
     letter-spacing: 0.1em;
     padding: 9px 8px;
@@ -1015,7 +1020,7 @@
   }
   .rating-icon { font-size: 18px; }
   .rating-name {
-    font-family: 'EB Garamond', serif;
+    font-family: Inter, sans-serif;
     font-size: 15px;
     color: var(--cream);
     flex: 1;
@@ -1883,7 +1888,7 @@
     display: block; margin-bottom: 4px;
   }
   .hero-stat-label {
-    font-family: 'DM Mono', monospace; font-size: 9px;
+    font-family: Inter, sans-serif; font-size: 9px;
     letter-spacing: 0.12em; color: var(--cream3); text-transform: uppercase;
   }
 
@@ -1905,7 +1910,7 @@
   .hero-feature:hover { border-color: var(--gold3); background: rgba(201,168,76,0.05); transform: translateY(-2px); }
   .hero-feature:hover::before { opacity: 1; }
   .hero-feature-icon { font-size: 22px; margin-bottom: 10px; display: block; }
-  .hero-feature-title { font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 0.15em; color: var(--gold3); text-transform: uppercase; margin-bottom: 5px; }
+  .hero-feature-title { font-family: Inter, sans-serif; font-size: 10px; letter-spacing: 0.15em; color: var(--gold3); text-transform: uppercase; margin-bottom: 5px; }
   .hero-feature-desc { font-size: 12px; color: var(--cream3); line-height: 1.5; }
 
   /* Mobile adjustments */
@@ -1941,7 +1946,7 @@
   .nav-drop-item {
     display: flex; align-items: center; gap: 10px;
     width: 100%; padding: 9px 16px; background: transparent; border: none;
-    color: var(--cream3); font-family: 'DM Mono', monospace;
+    color: var(--cream3); font-family: Inter, sans-serif;
     font-size: 10px; letter-spacing: 0.08em; cursor: pointer;
     transition: all 0.15s; text-align: left;
   }

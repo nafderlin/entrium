@@ -13,7 +13,9 @@
 
   <link rel="stylesheet" href="styles/main.css">
 
-  <meta property="og:title" content="Entrium — Твой большой брат по поступлению" data-id="th-modified" ><meta property="og:image" content="https://tiiny.host/assets/logo-purple-bg.png" data-id="th-modified" ><link rel="icon" href="https://entriumai.tiiny.site/favicon.png" data-id="th-modified" ><meta property="og:url" content="https://entriumai.tiiny.site/" data-id="th-modified" ><meta property="og:type" content="website" data-id="th-modified" ><script defer data-domain="entriumai.tiiny.site" src="https://analytics.tiiny.site/js/plausible.js"></script></head>
+  <style></style>
+
+</head>
 <body>
 
 <!-- TOAST CONTAINER -->
@@ -22,8 +24,8 @@
 <!-- KEYBOARD SHORTCUT OVERLAY -->
 <div id="kbd-overlay" onclick="closeKbd()">
   <div class="kbd-grid" onclick="event.stopPropagation()">
-    <div style="font-family:'Cinzel',serif;font-size:14px;color:var(--gold3);letter-spacing:0.2em;margin-bottom:12px">ГОРЯЧИЕ КЛАВИШИ</div>
-    <div style="display:grid;grid-template-columns:auto 1fr;gap:8px 16px;font-family:'DM Mono',monospace;font-size:11px;color:var(--cream3)">
+    <div style="font-size:14px;color:var(--gold3);letter-spacing:0.2em;margin-bottom:12px">ГОРЯЧИЕ КЛАВИШИ</div>
+    <div style="display:grid;grid-template-columns:auto 1fr;gap:8px 16px;font-size:11px;color:var(--cream3)">
       <span class="kbd-hint">1</span><span>Главная</span>
       <span class="kbd-hint">2</span><span>Анализатор</span>
       <span class="kbd-hint">3</span><span>Трекер</span>
@@ -36,7 +38,7 @@
       <span class="kbd-hint">?</span><span>Эта панель</span>
       <span class="kbd-hint">Esc</span><span>Закрыть</span>
     </div>
-    <button onclick="closeKbd()" style="margin-top:16px;background:transparent;border:1px solid var(--border);color:var(--cream3);font-family:'DM Mono',monospace;font-size:9px;padding:7px 14px;cursor:pointer;letter-spacing:0.1em">ESC — ЗАКРЫТЬ</button>
+    <button onclick="closeKbd()" style="margin-top:16px;background:transparent;border:1px solid var(--border);color:var(--cream3);font-size:9px;padding:7px 14px;cursor:pointer;letter-spacing:0.1em">ESC — ЗАКРЫТЬ</button>
   </div>
 </div>
 
@@ -49,21 +51,21 @@
     <div style="position:absolute;bottom:20%;right:10%;width:400px;height:400px;background:radial-gradient(ellipse,rgba(201,168,76,0.06) 0%,transparent 70%);animation:float2 10s ease-in-out infinite"></div>
   </div>
   <div class="login-card" style="position:relative;z-index:2">
-    <div class="login-logo-shimmer" style="font-family: Inter, sans-serif;font-size:60px;font-weight:700;letter-spacing:0.1em;text-align:center;margin-bottom:4px;line-height:1;width:100%">Entrium</div>
+    <div class="login-logo-shimmer" style="font-size:60px;font-weight:700;letter-spacing:0.1em;text-align:center;margin-bottom:4px;line-height:1;width:100%">Entrium</div>
     <div class="login-subtitle">Твой большой брат по поступлению</div>
     <!-- Stats row in login -->
     <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);margin:20px 0 28px;border:1px solid var(--border)">
       <div style="background:var(--bg1);padding:12px 8px;text-align:center">
-        <div style="font-family:'Cinzel',serif;font-size:16px;color:var(--gold)">1500+</div>
-        <div style="font-family:'DM Mono',monospace;font-size:8px;color:var(--cream3);letter-spacing:0.1em;margin-top:2px">ВУЗОВ</div>
+        <div style="font-size:16px;color:var(--gold)">1500+</div>
+        <div style="font-size:10px;color:var(--cream3);letter-spacing:0.1em;margin-top:2px">ВУЗОВ</div>
       </div>
       <div style="background:var(--bg1);padding:12px 8px;text-align:center">
-        <div style="font-family:'Cinzel',serif;font-size:16px;color:var(--gold)">8</div>
-        <div style="font-family:'DM Mono',monospace;font-size:8px;color:var(--cream3);letter-spacing:0.1em;margin-top:2px">AI TOOLS</div>
+        <div style="font-size:16px;color:var(--gold)">8</div>
+        <div style="font-size:10px;color:var(--cream3);letter-spacing:0.1em;margin-top:2px">AI TOOLS</div>
       </div>
       <div style="background:var(--bg1);padding:12px 8px;text-align:center">
-        <div style="font-family:'Cinzel',serif;font-size:16px;color:var(--gold)">Live</div>
-        <div style="font-family:'DM Mono',monospace;font-size:8px;color:var(--cream3);letter-spacing:0.1em;margin-top:2px">ДЕДЛАЙНЫ</div>
+        <div style="font-size:16px;color:var(--gold)">Live</div>
+        <div style="font-size:10px;color:var(--cream3);letter-spacing:0.1em;margin-top:2px">ДЕДЛАЙНЫ</div>
       </div>
     </div>
     <div class="login-divider">
@@ -79,12 +81,12 @@
 <div id="app">
   <!-- TOP BAR -->
   <header id="main-header">
-    <span style="font-family:'Cinzel',serif;font-size:20px;font-weight:700;letter-spacing:0.22em;color:#c9a84c">Entrium</span>
+    <span style="font-size:24px;font-weight:700;letter-spacing:0.22em;color:#c9a84c">Entrium</span>
     <div style="display:flex;align-items:center;gap:10px">
       <button id="theme-btn" onclick="toggleTheme()" title="Переключить тему" style="
         display:flex;align-items:center;gap:7px;
         background:transparent;border:1px solid var(--border2);
-        color:var(--cream2);font-family:'DM Mono',monospace;
+        color:var(--cream2);
         font-size:10px;letter-spacing:0.1em;padding:6px 12px;
         cursor:pointer;transition:all 0.2s;white-space:nowrap;
       ">
@@ -150,8 +152,8 @@
     <div id="onboarding-overlay" style="display:none;position:fixed;inset:0;z-index:500;background:rgba(6,9,10,0.96);backdrop-filter:blur(12px);overflow-y:auto">
       <div style="max-width:600px;margin:0 auto;padding:60px 32px">
         <div style="text-align:center;margin-bottom:40px">
-          <div style="font-family:'Cinzel',serif;font-size:28px;color:var(--gold);letter-spacing:0.2em;margin-bottom:8px">Добро пожаловать</div>
-          <div style="font-family:'EB Garamond',serif;font-style:italic;font-size:16px;color:var(--cream3)">Давай настроим Entrium под тебя — займёт 1 минуту</div>
+          <div style="font-size:28px;color:var(--gold);letter-spacing:0.2em;margin-bottom:8px">Добро пожаловать</div>
+          <div style="font-style:italic;font-size:16px;color:var(--cream3)">Давай настроим Entrium под тебя — займёт 1 минуту</div>
         </div>
         <!-- Steps indicator -->
         <div style="display:flex;align-items:center;justify-content:center;gap:0;margin-bottom:40px">
@@ -163,17 +165,17 @@
         </div>
         <!-- Step 1 -->
         <div id="ob-step-1">
-          <div style="font-family:'Playfair Display',serif;font-size:22px;color:var(--cream);margin-bottom:24px;text-align:center">Куда хочешь поступить?</div>
+          <div style="font-size:22px;color:var(--cream);margin-bottom:24px;text-align:center">Куда хочешь поступить?</div>
           <div style="display:grid;gap:12px;margin-bottom:24px">
             <div><label class="form-label">Твоё имя</label><input id="ob-name" class="form-input" placeholder="Amir, Zarnigor..."></div>
             <div><label class="form-label">Специальность</label><input id="ob-major" class="form-input" placeholder="Computer Science, Business, Law..."></div>
             <div><label class="form-label">Целевые университеты</label><input id="ob-unis" class="form-input" placeholder="Harvard, MIT, LSE, NUS..."></div>
           </div>
-          <button onclick="obNext(1)" style="background:linear-gradient(135deg,var(--gold3),var(--gold));color:var(--bg);font-family:'Cinzel',serif;font-size:12px;letter-spacing:0.18em;padding:14px 32px;border:none;cursor:pointer;width:100%">ДАЛЕЕ →</button>
+          <button onclick="obNext(1)" style="background:linear-gradient(135deg,var(--gold3),var(--gold));color:var(--bg);font-size:12px;letter-spacing:0.18em;padding:14px 32px;border:none;cursor:pointer;width:100%">ДАЛЕЕ →</button>
         </div>
         <!-- Step 2 -->
         <div id="ob-step-2" style="display:none">
-          <div style="font-family:'Playfair Display',serif;font-size:22px;color:var(--cream);margin-bottom:24px;text-align:center">Когда планируешь поступить?</div>
+          <div style="font-size:22px;color:var(--cream);margin-bottom:24px;text-align:center">Когда планируешь поступить?</div>
           <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:24px">
             <div><label class="form-label">Год поступления</label>
               <select id="ob-year" class="form-select"><option>2025</option><option>2026</option><option>2027</option><option>2028</option></select>
@@ -194,22 +196,22 @@
             </div>
           </div>
           <div style="display:flex;gap:10px">
-            <button onclick="obBack(2)" style="background:transparent;border:1px solid var(--border);color:var(--cream3);font-family:'DM Mono',monospace;font-size:10px;padding:14px 20px;cursor:pointer">← НАЗАД</button>
-            <button onclick="obNext(2)" style="flex:1;background:linear-gradient(135deg,var(--gold3),var(--gold));color:var(--bg);font-family:'Cinzel',serif;font-size:12px;letter-spacing:0.18em;padding:14px;border:none;cursor:pointer">ДАЛЕЕ →</button>
+            <button onclick="obBack(2)" style="background:transparent;border:1px solid var(--border);color:var(--cream3);font-size:10px;padding:14px 20px;cursor:pointer">← НАЗАД</button>
+            <button onclick="obNext(2)" style="flex:1;background:linear-gradient(135deg,var(--gold3),var(--gold));color:var(--bg);font-size:12px;letter-spacing:0.18em;padding:14px;border:none;cursor:pointer">ДАЛЕЕ →</button>
           </div>
         </div>
         <!-- Step 3 -->
         <div id="ob-step-3" style="display:none">
-          <div style="font-family:'Playfair Display',serif;font-size:22px;color:var(--cream);margin-bottom:8px;text-align:center">Твой уровень подготовки</div>
-          <div style="font-family:'EB Garamond',serif;font-style:italic;font-size:14px;color:var(--cream3);text-align:center;margin-bottom:24px">Честно — чтобы план был реалистичным</div>
+          <div style="font-size:22px;color:var(--cream);margin-bottom:8px;text-align:center">Твой уровень подготовки</div>
+          <div style="font-style:italic;font-size:14px;color:var(--cream3);text-align:center;margin-bottom:24px">Честно — чтобы план был реалистичным</div>
           <div style="display:grid;gap:12px;margin-bottom:24px">
             <div><label class="form-label">GPA / Средний балл</label><input id="ob-gpa" class="form-input" placeholder="4.2/5.0, 95%, Отлично..."></div>
             <div><label class="form-label">Английский</label><input id="ob-eng" class="form-input" placeholder="IELTS 7.0, TOEFL 105, B2..."></div>
             <div><label class="form-label">SAT / ACT (если есть)</label><input id="ob-sat" class="form-input" placeholder="1450 SAT, 32 ACT, нет пока..."></div>
           </div>
           <div style="display:flex;gap:10px">
-            <button onclick="obBack(3)" style="background:transparent;border:1px solid var(--border);color:var(--cream3);font-family:'DM Mono',monospace;font-size:10px;padding:14px 20px;cursor:pointer">← НАЗАД</button>
-            <button onclick="obFinish()" id="ob-finish-btn" style="flex:1;background:linear-gradient(135deg,var(--gold3),var(--gold));color:var(--bg);font-family:'Cinzel',serif;font-size:12px;letter-spacing:0.18em;padding:14px;border:none;cursor:pointer">✦ СОЗДАТЬ МОЙ ПЛАН</button>
+            <button onclick="obBack(3)" style="background:transparent;border:1px solid var(--border);color:var(--cream3);font-size:10px;padding:14px 20px;cursor:pointer">← НАЗАД</button>
+            <button onclick="obFinish()" id="ob-finish-btn" style="flex:1;background:linear-gradient(135deg,var(--gold3),var(--gold));color:var(--bg);font-size:12px;letter-spacing:0.18em;padding:14px;border:none;cursor:pointer">✦ СОЗДАТЬ МОЙ ПЛАН</button>
           </div>
         </div>
       </div>
@@ -259,10 +261,10 @@
         <!-- Welcome bar -->
         <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:32px;flex-wrap:wrap;gap:12px">
           <div>
-            <div id="dash-greeting" style="font-family:'Playfair Display',serif;font-size:26px;color:var(--cream)"></div>
-            <div id="dash-sub" style="font-family:'DM Mono',monospace;font-size:10px;color:var(--cream3);margin-top:4px;letter-spacing:0.1em"></div>
+            <div id="dash-greeting" style="font-size:26px;color:var(--cream)"></div>
+            <div id="dash-sub" style="font-size:10px;color:var(--cream3);margin-top:4px;letter-spacing:0.1em"></div>
           </div>
-          <button onclick="startOnboarding()" style="background:transparent;border:1px solid var(--border);color:var(--cream3);font-family:'DM Mono',monospace;font-size:9px;padding:8px 14px;cursor:pointer;letter-spacing:0.1em">✎ РЕДАКТИРОВАТЬ ПРОФИЛЬ</button>
+          <button onclick="startOnboarding()" style="background:transparent;border:1px solid var(--border);color:var(--cream3);font-size:9px;padding:8px 14px;cursor:pointer;letter-spacing:0.1em">✎ РЕДАКТИРОВАТЬ ПРОФИЛЬ</button>
         </div>
         <!-- Dashboard grid -->
         <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;margin-bottom:24px" id="dash-cards"></div>
@@ -538,8 +540,8 @@
       <!-- STEP 1: SETUP (shown when no profile) -->
       <div id="tracker-setup">
         <div style="text-align:center;margin-bottom:36px">
-          <div style="display:inline-flex;align-items:center;gap:8px;background:rgba(201,168,76,0.08);border:1px solid rgba(201,168,76,0.3);color:var(--gold3);font-family:'DM Mono',monospace;font-size:10px;letter-spacing:0.2em;padding:7px 16px;margin-bottom:16px">✦ ПЕРСОНАЛЬНЫЙ ТРЕКЕР</div>
-          <h1 style="font-family:'Playfair Display',serif;font-size:34px;color:var(--cream);margin-bottom:8px">Твой личный <em style="background:linear-gradient(135deg,var(--gold),var(--gold2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">план поступления</em></h1>
+          <div style="display:inline-flex;align-items:center;gap:8px;background:rgba(201,168,76,0.08);border:1px solid rgba(201,168,76,0.3);color:var(--gold3);font-size:10px;letter-spacing:0.2em;padding:7px 16px;margin-bottom:16px">✦ ПЕРСОНАЛЬНЫЙ ТРЕКЕР</div>
+          <h1 style="font-size:34px;color:var(--cream);margin-bottom:8px">Твой личный <em style="background:linear-gradient(135deg,var(--gold),var(--gold2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">план поступления</em></h1>
           <p style="color:var(--cream3);font-size:15px;font-style:italic">AI создаст персональную дорожную карту именно под тебя — с дедлайнами, задачами и приоритетами</p>
         </div>
 
@@ -597,7 +599,7 @@
             <textarea id="tr-weak" class="form-textarea" style="min-height:80px" placeholder="Пример: нет рекомендательных писем, слабый SAT, мало внеклассной активности, не знаю как писать эссе..."></textarea>
           </div>
 
-          <button onclick="generateTracker()" id="tr-gen-btn" style="background:linear-gradient(135deg,var(--gold3),var(--gold));color:var(--bg);font-family:'Cinzel',serif;font-size:13px;letter-spacing:0.2em;padding:16px 32px;border:none;cursor:pointer;width:100%;transition:all 0.3s">
+          <button onclick="generateTracker()" id="tr-gen-btn" style="background:linear-gradient(135deg,var(--gold3),var(--gold));color:var(--bg);font-size:13px;letter-spacing:0.2em;padding:16px 32px;border:none;cursor:pointer;width:100%;transition:all 0.3s">
             ✦ СОЗДАТЬ МОЙ ПЕРСОНАЛЬНЫЙ ТРЕКЕР
           </button>
         </div>
@@ -609,15 +611,15 @@
         <!-- Student header -->
         <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:28px;flex-wrap:wrap;gap:12px">
           <div>
-            <div style="font-family:'DM Mono',monospace;font-size:9px;letter-spacing:0.2em;color:var(--gold3);margin-bottom:4px">ПЕРСОНАЛЬНЫЙ ТРЕКЕР</div>
-            <div id="tr-dashboard-name" style="font-family:'Playfair Display',serif;font-size:24px;color:var(--cream)"></div>
-            <div id="tr-dashboard-sub" style="font-family:'DM Mono',monospace;font-size:10px;color:var(--cream3);margin-top:2px"></div>
+            <div style="font-size:9px;letter-spacing:0.2em;color:var(--gold3);margin-bottom:4px">ПЕРСОНАЛЬНЫЙ ТРЕКЕР</div>
+            <div id="tr-dashboard-name" style="font-size:24px;color:var(--cream)"></div>
+            <div id="tr-dashboard-sub" style="font-size:10px;color:var(--cream3);margin-top:2px"></div>
           </div>
           <div style="display:flex;gap:10px">
-            <button onclick="downloadTrackerPDF()" style="background:linear-gradient(135deg,#2a6a2a,#5aaa78);color:#fff;font-family:'DM Mono',monospace;font-size:10px;letter-spacing:0.12em;padding:10px 20px;border:none;cursor:pointer;display:flex;align-items:center;gap:8px">
+            <button onclick="downloadTrackerPDF()" style="background:linear-gradient(135deg,#2a6a2a,#5aaa78);color:#fff;font-size:10px;letter-spacing:0.12em;padding:10px 20px;border:none;cursor:pointer;display:flex;align-items:center;gap:8px">
               ⬇ СКАЧАТЬ PDF
             </button>
-            <button onclick="resetTracker()" style="background:transparent;border:1px solid var(--border);color:var(--cream3);font-family:'DM Mono',monospace;font-size:10px;padding:10px 16px;cursor:pointer">
+            <button onclick="resetTracker()" style="background:transparent;border:1px solid var(--border);color:var(--cream3);font-size:10px;padding:10px 16px;cursor:pointer">
               ↺ НОВЫЙ
             </button>
           </div>
@@ -627,8 +629,8 @@
         <div style="background:var(--bg1);border:1px solid var(--border);padding:20px 24px;margin-bottom:24px;position:relative">
           <div style="position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--gold3),transparent)"></div>
           <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">
-            <span style="font-family:'DM Mono',monospace;font-size:10px;letter-spacing:0.12em;color:var(--cream3)">ОБЩИЙ ПРОГРЕСС</span>
-            <span id="tr-progress-pct" style="font-family:'DM Mono',monospace;font-size:14px;color:var(--gold3);font-weight:700">0%</span>
+            <span style="font-size:10px;letter-spacing:0.12em;color:var(--cream3)">ОБЩИЙ ПРОГРЕСС</span>
+            <span id="tr-progress-pct" style="font-size:14px;color:var(--gold3);font-weight:700">0%</span>
           </div>
           <div style="height:6px;background:var(--border);border-radius:3px;overflow:hidden">
             <div id="tr-progress-bar" style="height:100%;width:0%;background:linear-gradient(90deg,var(--gold3),var(--gold));transition:width 0.5s;border-radius:3px"></div>
@@ -639,8 +641,8 @@
         <!-- AI Diagnosis -->
         <div id="tr-diagnosis-block" style="background:var(--bg1);border:1px solid var(--border);padding:24px;margin-bottom:24px;position:relative;display:none">
           <div style="position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,#9b6fc4,transparent)"></div>
-          <div style="font-family:'DM Mono',monospace;font-size:9px;letter-spacing:0.2em;color:#9b6fc4;margin-bottom:12px">● AI ДИАГНОСТИКА ПРОФИЛЯ</div>
-          <div id="tr-diagnosis-text" style="font-family:'EB Garamond',serif;font-size:15px;line-height:1.85;color:var(--cream2)"></div>
+          <div style="font-size:9px;letter-spacing:0.2em;color:#9b6fc4;margin-bottom:12px">● AI ДИАГНОСТИКА ПРОФИЛЯ</div>
+          <div id="tr-diagnosis-text" style="font-size:15px;line-height:1.85;color:var(--cream2)"></div>
         </div>
 
         <!-- Timeline -->
@@ -661,9 +663,9 @@
         <div style="max-width:1200px;margin:0 auto">
           <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px">
             <span style="width:8px;height:8px;background:#5aaa78;border-radius:50%;animation:pulse 2s infinite"></span>
-            <span style="font-family:'DM Mono',monospace;font-size:10px;letter-spacing:0.2em;color:#5aaa78">LIVE · QS WORLD RANKINGS 2025</span>
+            <span style="font-size:10px;letter-spacing:0.2em;color:#5aaa78">LIVE · QS WORLD RANKINGS 2025</span>
           </div>
-          <h1 style="font-family:'Playfair Display',serif;font-size:32px;color:var(--cream);margin-bottom:6px">Мировой рейтинг <em style="background:linear-gradient(135deg,var(--gold),var(--gold2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">университетов</em></h1>
+          <h1 style="font-size:32px;color:var(--cream);margin-bottom:6px">Мировой рейтинг <em style="background:linear-gradient(135deg,var(--gold),var(--gold2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">университетов</em></h1>
           <p style="color:var(--cream3);font-size:14px;font-style:italic">1500+ университетов · Фильтры по стране, предмету, типу · AI поиск в реальном времени</p>
         </div>
       </div>
@@ -708,18 +710,18 @@
                 <option>Public</option><option>Private</option><option>Research</option>
               </select>
             </div>
-            <button onclick="qsAISearch()" style="background:linear-gradient(135deg,var(--gold3),var(--gold));color:var(--bg);font-family:'Cinzel',serif;font-size:10px;letter-spacing:0.12em;padding:10px 16px;border:none;cursor:pointer;white-space:nowrap;height:42px">AI ПОИСК</button>
+            <button onclick="qsAISearch()" style="background:linear-gradient(135deg,var(--gold3),var(--gold));color:var(--bg);font-size:10px;letter-spacing:0.12em;padding:10px 16px;border:none;cursor:pointer;white-space:nowrap;height:42px">AI ПОИСК</button>
           </div>
           <!-- Quick region tags -->
           <div style="display:flex;gap:6px;flex-wrap:wrap;margin-top:14px">
-            <span style="font-family:'DM Mono',monospace;font-size:9px;color:var(--cream3);align-self:center">ТОП:</span>
+            <span style="font-size:9px;color:var(--cream3);align-self:center">ТОП:</span>
             <button class="ctag active" onclick="qsSetRange(1,10,this)">Топ 10</button>
             <button class="ctag" onclick="qsSetRange(1,50,this)">Топ 50</button>
             <button class="ctag" onclick="qsSetRange(1,100,this)">Топ 100</button>
             <button class="ctag" onclick="qsSetRange(1,200,this)">Топ 200</button>
             <button class="ctag" onclick="qsSetRange(1,500,this)">Топ 500</button>
             <button class="ctag" onclick="qsSetRange(1,9999,this)">Все</button>
-            <span style="font-family:'DM Mono',monospace;font-size:9px;color:var(--cream3);align-self:center;margin-left:8px">РЕГИОН:</span>
+            <span style="font-size:9px;color:var(--cream3);align-self:center;margin-left:8px">РЕГИОН:</span>
             <button class="ctag" onclick="qsSetCountry('США',this)">🇺🇸 США</button>
             <button class="ctag" onclick="qsSetCountry('Великобритания',this)">🇬🇧 UK</button>
             <button class="ctag" onclick="qsSetCountry('Германия',this)">🇩🇪 DE</button>
@@ -732,9 +734,9 @@
 
         <!-- SORT BAR -->
         <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px;flex-wrap:wrap;gap:8px">
-          <div id="qs-count" style="font-family:'DM Mono',monospace;font-size:10px;color:var(--cream3);letter-spacing:0.1em"></div>
+          <div id="qs-count" style="font-size:10px;color:var(--cream3);letter-spacing:0.1em"></div>
           <div style="display:flex;gap:6px">
-            <span style="font-family:'DM Mono',monospace;font-size:9px;color:var(--cream3);align-self:center">СОРТ:</span>
+            <span style="font-size:9px;color:var(--cream3);align-self:center">СОРТ:</span>
             <button class="ctag active" id="sort-rank" onclick="qsSort('rank',this)">Рейтинг QS</button>
             <button class="ctag" id="sort-name" onclick="qsSort('name',this)">А-Я</button>
             <button class="ctag" id="sort-score" onclick="qsSort('score',this)">Балл</button>
@@ -745,10 +747,10 @@
         <div id="qs-ai-result" style="display:none;margin-bottom:20px;background:var(--bg1);border:1px solid var(--gold3);padding:24px;position:relative">
           <div style="position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--gold3),transparent)"></div>
           <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px">
-            <span style="font-family:'DM Mono',monospace;font-size:9px;letter-spacing:0.15em;color:var(--gold3)">● AI · РЕЗУЛЬТАТ ЖИВОГО ПОИСКА</span>
+            <span style="font-size:9px;letter-spacing:0.15em;color:var(--gold3)">● AI · РЕЗУЛЬТАТ ЖИВОГО ПОИСКА</span>
             <button onclick="document.getElementById('qs-ai-result').style.display='none'" style="background:transparent;border:none;color:var(--cream3);cursor:pointer;font-size:14px">✕</button>
           </div>
-          <div id="qs-ai-content" style="font-family:'EB Garamond',serif;font-size:15px;line-height:1.8;color:var(--cream2)"></div>
+          <div id="qs-ai-content" style="font-size:15px;line-height:1.8;color:var(--cream2)"></div>
         </div>
 
         <!-- TABLE VIEW -->
@@ -756,14 +758,14 @@
           <table style="width:100%;border-collapse:collapse">
             <thead>
               <tr style="border-bottom:1px solid var(--border)">
-                <th style="font-family:'DM Mono',monospace;font-size:9px;letter-spacing:0.12em;color:var(--gold3);text-align:left;padding:10px 12px;white-space:nowrap;cursor:pointer" onclick="qsSort('rank',document.getElementById('sort-rank'))">RANK QS ↕</th>
-                <th style="font-family:'DM Mono',monospace;font-size:9px;letter-spacing:0.12em;color:var(--gold3);text-align:left;padding:10px 12px">УНИВЕРСИТЕТ</th>
-                <th style="font-family:'DM Mono',monospace;font-size:9px;letter-spacing:0.12em;color:var(--gold3);text-align:left;padding:10px 12px">СТРАНА</th>
-                <th style="font-family:'DM Mono',monospace;font-size:9px;letter-spacing:0.12em;color:var(--gold3);text-align:center;padding:10px 12px;cursor:pointer;white-space:nowrap" onclick="qsSort('score',document.getElementById('sort-score'))">БАЛЛ ↕</th>
-                <th style="font-family:'DM Mono',monospace;font-size:9px;letter-spacing:0.12em;color:var(--gold3);text-align:left;padding:10px 12px">СИЛЬНЫЕ НАПРАВЛЕНИЯ</th>
-                <th style="font-family:'DM Mono',monospace;font-size:9px;letter-spacing:0.12em;color:var(--gold3);text-align:center;padding:10px 12px">ТИП</th>
-                <th style="font-family:'DM Mono',monospace;font-size:9px;letter-spacing:0.12em;color:var(--gold3);text-align:center;padding:10px 12px">ШАНС</th>
-                <th style="font-family:'DM Mono',monospace;font-size:9px;letter-spacing:0.12em;color:var(--gold3);text-align:center;padding:10px 12px">СРАВНИТЬ</th>
+                <th style="font-size:9px;letter-spacing:0.12em;color:var(--gold3);text-align:left;padding:10px 12px;white-space:nowrap;cursor:pointer" onclick="qsSort('rank',document.getElementById('sort-rank'))">RANK QS ↕</th>
+                <th style="font-size:9px;letter-spacing:0.12em;color:var(--gold3);text-align:left;padding:10px 12px">УНИВЕРСИТЕТ</th>
+                <th style="font-size:9px;letter-spacing:0.12em;color:var(--gold3);text-align:left;padding:10px 12px">СТРАНА</th>
+                <th style="font-size:9px;letter-spacing:0.12em;color:var(--gold3);text-align:center;padding:10px 12px;cursor:pointer;white-space:nowrap" onclick="qsSort('score',document.getElementById('sort-score'))">БАЛЛ ↕</th>
+                <th style="font-size:9px;letter-spacing:0.12em;color:var(--gold3);text-align:left;padding:10px 12px">СИЛЬНЫЕ НАПРАВЛЕНИЯ</th>
+                <th style="font-size:9px;letter-spacing:0.12em;color:var(--gold3);text-align:center;padding:10px 12px">ТИП</th>
+                <th style="font-size:9px;letter-spacing:0.12em;color:var(--gold3);text-align:center;padding:10px 12px">ШАНС</th>
+                <th style="font-size:9px;letter-spacing:0.12em;color:var(--gold3);text-align:center;padding:10px 12px">СРАВНИТЬ</th>
               </tr>
             </thead>
             <tbody id="qs-tbody"></tbody>
@@ -783,11 +785,11 @@
   <section id="section-deadlines" class="section">
     <div style="max-width:1100px;margin:0 auto;padding:48px 40px">
       <div style="text-align:center;margin-bottom:40px">
-        <div style="display:inline-flex;align-items:center;gap:8px;background:rgba(192,57,43,0.12);border:1px solid rgba(192,57,43,0.4);color:#e57373;font-family:'DM Mono',monospace;font-size:11px;letter-spacing:0.2em;padding:8px 18px;margin-bottom:20px;text-transform:uppercase">
+        <div style="display:inline-flex;align-items:center;gap:8px;background:rgba(192,57,43,0.12);border:1px solid rgba(192,57,43,0.4);color:#e57373;font-size:11px;letter-spacing:0.2em;padding:8px 18px;margin-bottom:20px;text-transform:uppercase">
           <span style="width:8px;height:8px;background:#e57373;border-radius:50%;animation:pulse 2s infinite"></span>
           LIVE · Актуально на 2026
         </div>
-        <h1 style="font-family:'Playfair Display',serif;font-size:36px;color:var(--cream);margin-bottom:8px">Дедлайны <em style="font-style:italic;background:linear-gradient(135deg,var(--gold),var(--gold2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">поступления 2026</em></h1>
+        <h1 style="font-size:36px;color:var(--cream);margin-bottom:8px">Дедлайны <em style="font-style:italic;background:linear-gradient(135deg,var(--gold),var(--gold2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">поступления 2026</em></h1>
         <p style="font-style:italic;color:var(--cream3);font-size:16px">AI ищет актуальные дедлайны в реальном времени — бакалавриат, магистратура, Foundation</p>
       </div>
 
@@ -816,13 +818,13 @@
             <label class="form-label">Специальность (опционально)</label>
             <input type="text" id="dl-major" class="form-input" placeholder="Computer Science, Business...">
           </div>
-          <button onclick="searchDeadlines()" style="background:linear-gradient(135deg,var(--gold3),var(--gold));color:var(--bg);font-family:'Cinzel',serif;font-size:12px;letter-spacing:0.15em;padding:10px 20px;border:none;cursor:pointer;white-space:nowrap;height:42px;transition:all 0.3s" onmouseover="this.style.opacity='0.9'" onmouseout="this.style.opacity='1'">
+          <button onclick="searchDeadlines()" style="background:linear-gradient(135deg,var(--gold3),var(--gold));color:var(--bg);font-size:12px;letter-spacing:0.15em;padding:10px 20px;border:none;cursor:pointer;white-space:nowrap;height:42px;transition:all 0.3s" onmouseover="this.style.opacity='0.9'" onmouseout="this.style.opacity='1'">
             НАЙТИ
           </button>
         </div>
         <!-- Country tags -->
         <div style="margin-top:14px;display:flex;flex-wrap:wrap;gap:6px" id="country-quick-tags">
-          <span style="font-family:'DM Mono',monospace;font-size:9px;color:var(--cream3);letter-spacing:0.1em;align-self:center">БЫСТРЫЙ ВЫБОР:</span>
+          <span style="color:var(--cream3);letter-spacing:0.1em;align-self:center">БЫСТРЫЙ ВЫБОР:</span>
           <button onclick="selectCountry('США','USA')" class="ctag">🇺🇸 США</button>
           <button onclick="selectCountry('Великобритания','UK')" class="ctag">🇬🇧 UK</button>
           <button onclick="selectCountry('Германия','Germany')" class="ctag">🇩🇪 Германия</button>
@@ -842,13 +844,13 @@
           <div style="display:flex;align-items:center;gap:10px;margin-bottom:16px">
             <span style="font-size:20px">🇺🇸</span>
             <div>
-              <div style="font-family:'DM Mono',monospace;font-size:10px;letter-spacing:0.15em;color:var(--gold3);text-transform:uppercase">USA · Бакалавриат 2026</div>
-              <div style="font-family:'Playfair Display',serif;font-size:15px;color:var(--cream)">Common App Universities</div>
+              <div style="font-size:10px;letter-spacing:0.15em;color:var(--gold3);text-transform:uppercase">USA · Бакалавриат 2026</div>
+              <div style="font-size:15px;color:var(--cream)">Common App Universities</div>
             </div>
           </div>
           <table style="width:100%;border-collapse:collapse;font-size:13px">
-            <tr style="border-bottom:1px solid var(--border)"><th style="text-align:left;padding:6px 0;font-family:'DM Mono';font-size:9px;letter-spacing:0.1em;color:var(--gold3);text-transform:uppercase">Тип</th><th style="text-align:left;padding:6px 0;font-family:'DM Mono';font-size:9px;letter-spacing:0.1em;color:var(--gold3);text-transform:uppercase">Дедлайн</th><th style="text-align:left;padding:6px 0;font-family:'DM Mono';font-size:9px;letter-spacing:0.1em;color:var(--gold3);text-transform:uppercase">Решение</th></tr>
-            <tr style="background:rgba(255,255,255,0.02)"><td style="padding:7px 0;color:var(--cream2)">Early Decision I</td><td style="padding:7px 0;color:var(--gold);font-family:'DM Mono';font-size:11px">1 ноября 2025</td><td style="padding:7px 0;color:var(--cream3);font-size:11px">Mid-декабрь 2025</td></tr><tr><td style="padding:7px 0;color:var(--cream2)">Early Decision II</td><td style="padding:7px 0;color:var(--gold);font-family:'DM Mono';font-size:11px">1–15 января 2026</td><td style="padding:7px 0;color:var(--cream3);font-size:11px">Mid-февраль 2026</td></tr><tr style="background:rgba(255,255,255,0.02)"><td style="padding:7px 0;color:var(--cream2)">Early Action</td><td style="padding:7px 0;color:var(--gold);font-family:'DM Mono';font-size:11px">1–15 ноября 2025</td><td style="padding:7px 0;color:var(--cream3);font-size:11px">Mid-декабрь 2025</td></tr><tr><td style="padding:7px 0;color:var(--cream2)">Regular Decision</td><td style="padding:7px 0;color:var(--gold);font-family:'DM Mono';font-size:11px">1 января 2026</td><td style="padding:7px 0;color:var(--cream3);font-size:11px">Март–Апрель 2026</td></tr><tr style="background:rgba(255,255,255,0.02)"><td style="padding:7px 0;color:var(--cream2)">Rolling Admissions</td><td style="padding:7px 0;color:var(--gold);font-family:'DM Mono';font-size:11px">Сентябрь–Март</td><td style="padding:7px 0;color:var(--cream3);font-size:11px">В течение 4–6 нед.</td></tr>
+            <tr style="border-bottom:1px solid var(--border)"><th style="text-align:left;padding:6px 0;font-size:9px;letter-spacing:0.1em;color:var(--gold3);text-transform:uppercase">Тип</th><th style="text-align:left;padding:6px 0;font-size:9px;letter-spacing:0.1em;color:var(--gold3);text-transform:uppercase">Дедлайн</th><th style="text-align:left;padding:6px 0;font-size:9px;letter-spacing:0.1em;color:var(--gold3);text-transform:uppercase">Решение</th></tr>
+            <tr style="background:rgba(255,255,255,0.02)"><td style="padding:7px 0;color:var(--cream2)">Early Decision I</td><td style="padding:7px 0;color:var(--gold);font-size:11px">1 ноября 2025</td><td style="padding:7px 0;color:var(--cream3);font-size:11px">Mid-декабрь 2025</td></tr><tr><td style="padding:7px 0;color:var(--cream2)">Early Decision II</td><td style="padding:7px 0;color:var(--gold);font-size:11px">1–15 января 2026</td><td style="padding:7px 0;color:var(--cream3);font-size:11px">Mid-февраль 2026</td></tr><tr style="background:rgba(255,255,255,0.02)"><td style="padding:7px 0;color:var(--cream2)">Early Action</td><td style="padding:7px 0;color:var(--gold);font-size:11px">1–15 ноября 2025</td><td style="padding:7px 0;color:var(--cream3);font-size:11px">Mid-декабрь 2025</td></tr><tr><td style="padding:7px 0;color:var(--cream2)">Regular Decision</td><td style="padding:7px 0;color:var(--gold);font-size:11px">1 января 2026</td><td style="padding:7px 0;color:var(--cream3);font-size:11px">Март–Апрель 2026</td></tr><tr style="background:rgba(255,255,255,0.02)"><td style="padding:7px 0;color:var(--cream2)">Rolling Admissions</td><td style="padding:7px 0;color:var(--gold);font-size:11px">Сентябрь–Март</td><td style="padding:7px 0;color:var(--cream3);font-size:11px">В течение 4–6 нед.</td></tr>
           </table>
         </div>
 
@@ -857,13 +859,13 @@
           <div style="display:flex;align-items:center;gap:10px;margin-bottom:16px">
             <span style="font-size:20px">🇺🇸</span>
             <div>
-              <div style="font-family:'DM Mono',monospace;font-size:10px;letter-spacing:0.15em;color:var(--gold3);text-transform:uppercase">USA · Магистратура Fall 2026</div>
-              <div style="font-family:'Playfair Display',serif;font-size:15px;color:var(--cream)">Top Universities</div>
+              <div style="font-size:10px;letter-spacing:0.15em;color:var(--gold3);text-transform:uppercase">USA · Магистратура Fall 2026</div>
+              <div style="font-size:15px;color:var(--cream)">Top Universities</div>
             </div>
           </div>
           <table style="width:100%;border-collapse:collapse;font-size:13px">
-            <tr style="border-bottom:1px solid var(--border)"><th style="text-align:left;padding:6px 0;font-family:'DM Mono';font-size:9px;letter-spacing:0.1em;color:var(--gold3);text-transform:uppercase">Университет</th><th style="text-align:left;padding:6px 0;font-family:'DM Mono';font-size:9px;letter-spacing:0.1em;color:var(--gold3);text-transform:uppercase">Round 1</th><th style="text-align:left;padding:6px 0;font-family:'DM Mono';font-size:9px;letter-spacing:0.1em;color:var(--gold3);text-transform:uppercase">Round 2</th></tr>
-            <tr style="background:rgba(255,255,255,0.02)"><td style="padding:7px 0;color:var(--cream2)">MIT</td><td style="padding:7px 0;color:var(--gold);font-family:'DM Mono';font-size:11px">Дек 2025</td><td style="padding:7px 0;color:var(--cream3);font-size:11px">Фев 2026</td></tr><tr><td style="padding:7px 0;color:var(--cream2)">Stanford</td><td style="padding:7px 0;color:var(--gold);font-family:'DM Mono';font-size:11px">Дек 2025</td><td style="padding:7px 0;color:var(--cream3);font-size:11px">Март 2026</td></tr><tr style="background:rgba(255,255,255,0.02)"><td style="padding:7px 0;color:var(--cream2)">Harvard</td><td style="padding:7px 0;color:var(--gold);font-family:'DM Mono';font-size:11px">Нояб 2025</td><td style="padding:7px 0;color:var(--cream3);font-size:11px">Янв 2026</td></tr><tr><td style="padding:7px 0;color:var(--cream2)">Columbia</td><td style="padding:7px 0;color:var(--gold);font-family:'DM Mono';font-size:11px">Дек 2025</td><td style="padding:7px 0;color:var(--cream3);font-size:11px">Фев 2026</td></tr><tr style="background:rgba(255,255,255,0.02)"><td style="padding:7px 0;color:var(--cream2)">Carnegie Mellon</td><td style="padding:7px 0;color:var(--gold);font-family:'DM Mono';font-size:11px">Дек 2025</td><td style="padding:7px 0;color:var(--cream3);font-size:11px">Март 2026</td></tr>
+            <tr style="border-bottom:1px solid var(--border)"><th style="text-align:left;padding:6px 0;font-size:9px;letter-spacing:0.1em;color:var(--gold3);text-transform:uppercase">Университет</th><th style="text-align:left;padding:6px 0;font-size:9px;letter-spacing:0.1em;color:var(--gold3);text-transform:uppercase">Round 1</th><th style="text-align:left;padding:6px 0;font-size:9px;letter-spacing:0.1em;color:var(--gold3);text-transform:uppercase">Round 2</th></tr>
+            <tr style="background:rgba(255,255,255,0.02)"><td style="padding:7px 0;color:var(--cream2)">MIT</td><td style="padding:7px 0;color:var(--gold);font-size:11px">Дек 2025</td><td style="padding:7px 0;color:var(--cream3);font-size:11px">Фев 2026</td></tr><tr><td style="padding:7px 0;color:var(--cream2)">Stanford</td><td style="padding:7px 0;color:var(--gold);font-size:11px">Дек 2025</td><td style="padding:7px 0;color:var(--cream3);font-size:11px">Март 2026</td></tr><tr style="background:rgba(255,255,255,0.02)"><td style="padding:7px 0;color:var(--cream2)">Harvard</td><td style="padding:7px 0;color:var(--gold);font-size:11px">Нояб 2025</td><td style="padding:7px 0;color:var(--cream3);font-size:11px">Янв 2026</td></tr><tr><td style="padding:7px 0;color:var(--cream2)">Columbia</td><td style="padding:7px 0;color:var(--gold);font-size:11px">Дек 2025</td><td style="padding:7px 0;color:var(--cream3);font-size:11px">Фев 2026</td></tr><tr style="background:rgba(255,255,255,0.02)"><td style="padding:7px 0;color:var(--cream2)">Carnegie Mellon</td><td style="padding:7px 0;color:var(--gold);font-size:11px">Дек 2025</td><td style="padding:7px 0;color:var(--cream3);font-size:11px">Март 2026</td></tr>
           </table>
         </div>
 
@@ -872,13 +874,13 @@
           <div style="display:flex;align-items:center;gap:10px;margin-bottom:16px">
             <span style="font-size:20px">🇬🇧</span>
             <div>
-              <div style="font-family:'DM Mono',monospace;font-size:10px;letter-spacing:0.15em;color:var(--gold3);text-transform:uppercase">UK · Бакалавриат + Foundation 2026</div>
-              <div style="font-family:'Playfair Display',serif;font-size:15px;color:var(--cream)">UCAS Deadlines</div>
+              <div style="font-size:10px;letter-spacing:0.15em;color:var(--gold3);text-transform:uppercase">UK · Бакалавриат + Foundation 2026</div>
+              <div style="font-size:15px;color:var(--cream)">UCAS Deadlines</div>
             </div>
           </div>
           <table style="width:100%;border-collapse:collapse;font-size:13px">
-            <tr style="border-bottom:1px solid var(--border)"><th style="text-align:left;padding:6px 0;font-family:'DM Mono';font-size:9px;letter-spacing:0.1em;color:var(--gold3);text-transform:uppercase">Тип подачи</th><th style="text-align:left;padding:6px 0;font-family:'DM Mono';font-size:9px;letter-spacing:0.1em;color:var(--gold3);text-transform:uppercase">Дедлайн</th></tr>
-            <tr><td style="padding:7px 0;color:var(--cream2)">Oxford / Cambridge (UG)</td><td style="padding:7px 0;color:var(--gold);font-family:'DM Mono';font-size:11px">15 октября 2025</td></tr><tr><td style="padding:7px 0;color:var(--cream2)">Medicine / Dentistry (UG)</td><td style="padding:7px 0;color:var(--gold);font-family:'DM Mono';font-size:11px">15 октября 2025</td></tr><tr><td style="padding:7px 0;color:var(--cream2)">UCAS главный (UG)</td><td style="padding:7px 0;color:var(--gold);font-family:'DM Mono';font-size:11px">29 января 2026</td></tr><tr><td style="padding:7px 0;color:var(--cream2)">UCAS Extra</td><td style="padding:7px 0;color:var(--gold);font-family:'DM Mono';font-size:11px">4 июля 2026</td></tr><tr><td style="padding:7px 0;color:var(--cream2)">Clearing</td><td style="padding:7px 0;color:var(--gold);font-family:'DM Mono';font-size:11px">Август–Сентябрь 2026</td></tr><tr><td style="padding:7px 0;color:var(--cream2)">Foundation (большинство)</td><td style="padding:7px 0;color:var(--gold);font-family:'DM Mono';font-size:11px">Март–Июнь 2026</td></tr><tr><td style="padding:7px 0;color:var(--cream2)">Магистратура (rolling)</td><td style="padding:7px 0;color:var(--gold);font-family:'DM Mono';font-size:11px">Зависит от вуза</td></tr>
+            <tr style="border-bottom:1px solid var(--border)"><th style="text-align:left;padding:6px 0;font-size:9px;letter-spacing:0.1em;color:var(--gold3);text-transform:uppercase">Тип подачи</th><th style="text-align:left;padding:6px 0;font-size:9px;letter-spacing:0.1em;color:var(--gold3);text-transform:uppercase">Дедлайн</th></tr>
+            <tr><td style="padding:7px 0;color:var(--cream2)">Oxford / Cambridge (UG)</td><td style="padding:7px 0;color:var(--gold);font-size:11px">15 октября 2025</td></tr><tr><td style="padding:7px 0;color:var(--cream2)">Medicine / Dentistry (UG)</td><td style="padding:7px 0;color:var(--gold);font-size:11px">15 октября 2025</td></tr><tr><td style="padding:7px 0;color:var(--cream2)">UCAS главный (UG)</td><td style="padding:7px 0;color:var(--gold);font-size:11px">29 января 2026</td></tr><tr><td style="padding:7px 0;color:var(--cream2)">UCAS Extra</td><td style="padding:7px 0;color:var(--gold);font-size:11px">4 июля 2026</td></tr><tr><td style="padding:7px 0;color:var(--cream2)">Clearing</td><td style="padding:7px 0;color:var(--gold);font-size:11px">Август–Сентябрь 2026</td></tr><tr><td style="padding:7px 0;color:var(--cream2)">Foundation (большинство)</td><td style="padding:7px 0;color:var(--gold);font-size:11px">Март–Июнь 2026</td></tr><tr><td style="padding:7px 0;color:var(--cream2)">Магистратура (rolling)</td><td style="padding:7px 0;color:var(--gold);font-size:11px">Зависит от вуза</td></tr>
           </table>
         </div>
 
@@ -887,13 +889,13 @@
           <div style="display:flex;align-items:center;gap:10px;margin-bottom:16px">
             <span style="font-size:20px">🇪🇺</span>
             <div>
-              <div style="font-family:'DM Mono',monospace;font-size:10px;letter-spacing:0.15em;color:var(--gold3);text-transform:uppercase">Европа · Дедлайны по странам 2026</div>
-              <div style="font-family:'Playfair Display',serif;font-size:15px;color:var(--cream)">Autumn 2026 Semester</div>
+              <div style="font-size:10px;letter-spacing:0.15em;color:var(--gold3);text-transform:uppercase">Европа · Дедлайны по странам 2026</div>
+              <div style="font-size:15px;color:var(--cream)">Autumn 2026 Semester</div>
             </div>
           </div>
           <table style="width:100%;border-collapse:collapse;font-size:13px">
-            <tr style="border-bottom:1px solid var(--border)"><th style="text-align:left;padding:6px 0;font-family:'DM Mono';font-size:9px;letter-spacing:0.1em;color:var(--gold3);text-transform:uppercase">Страна</th><th style="text-align:left;padding:6px 0;font-family:'DM Mono';font-size:9px;letter-spacing:0.1em;color:var(--gold3);text-transform:uppercase">Дедлайн</th></tr>
-            <tr><td style="padding:7px 0;color:var(--cream2)">🇸🇪 Швеция</td><td style="padding:7px 0;color:var(--gold);font-family:'DM Mono';font-size:11px">Январь 2026</td></tr><tr><td style="padding:7px 0;color:var(--cream2)">🇫🇮 Финляндия</td><td style="padding:7px 0;color:var(--gold);font-family:'DM Mono';font-size:11px">Январь 2026</td></tr><tr><td style="padding:7px 0;color:var(--cream2)">🇳🇱 Нидерланды</td><td style="padding:7px 0;color:var(--gold);font-family:'DM Mono';font-size:11px">Январь–Апрель 2026</td></tr><tr><td style="padding:7px 0;color:var(--cream2)">🇩🇪 Германия</td><td style="padding:7px 0;color:var(--gold);font-family:'DM Mono';font-size:11px">Июль 2026</td></tr><tr><td style="padding:7px 0;color:var(--cream2)">🇩🇰 Дания</td><td style="padding:7px 0;color:var(--gold);font-family:'DM Mono';font-size:11px">Март 2026</td></tr><tr><td style="padding:7px 0;color:var(--cream2)">🇮🇹 Италия</td><td style="padding:7px 0;color:var(--gold);font-family:'DM Mono';font-size:11px">Апрель–Июнь 2026</td></tr><tr><td style="padding:7px 0;color:var(--cream2)">🇪🇸 Испания</td><td style="padding:7px 0;color:var(--gold);font-family:'DM Mono';font-size:11px">Июль–Сентябрь 2026</td></tr><tr><td style="padding:7px 0;color:var(--cream2)">🇵🇱 Польша</td><td style="padding:7px 0;color:var(--gold);font-family:'DM Mono';font-size:11px">Июнь 2026</td></tr><tr><td style="padding:7px 0;color:var(--cream2)">🇨🇿 Чехия</td><td style="padding:7px 0;color:var(--gold);font-family:'DM Mono';font-size:11px">Июнь–Сентябрь 2026</td></tr><tr><td style="padding:7px 0;color:var(--cream2)">🇭🇺 Венгрия</td><td style="padding:7px 0;color:var(--gold);font-family:'DM Mono';font-size:11px">Июнь 2026</td></tr>
+            <tr style="border-bottom:1px solid var(--border)"><th style="text-align:left;padding:6px 0;font-size:9px;letter-spacing:0.1em;color:var(--gold3);text-transform:uppercase">Страна</th><th style="text-align:left;padding:6px 0;font-size:9px;letter-spacing:0.1em;color:var(--gold3);text-transform:uppercase">Дедлайн</th></tr>
+            <tr><td style="padding:7px 0;color:var(--cream2)">🇸🇪 Швеция</td><td style="padding:7px 0;color:var(--gold);font-size:11px">Январь 2026</td></tr><tr><td style="padding:7px 0;color:var(--cream2)">🇫🇮 Финляндия</td><td style="padding:7px 0;color:var(--gold);font-size:11px">Январь 2026</td></tr><tr><td style="padding:7px 0;color:var(--cream2)">🇳🇱 Нидерланды</td><td style="padding:7px 0;color:var(--gold);font-size:11px">Январь–Апрель 2026</td></tr><tr><td style="padding:7px 0;color:var(--cream2)">🇩🇪 Германия</td><td style="padding:7px 0;color:var(--gold);font-size:11px">Июль 2026</td></tr><tr><td style="padding:7px 0;color:var(--cream2)">🇩🇰 Дания</td><td style="padding:7px 0;color:var(--gold);font-size:11px">Март 2026</td></tr><tr><td style="padding:7px 0;color:var(--cream2)">🇮🇹 Италия</td><td style="padding:7px 0;color:var(--gold);font-size:11px">Апрель–Июнь 2026</td></tr><tr><td style="padding:7px 0;color:var(--cream2)">🇪🇸 Испания</td><td style="padding:7px 0;color:var(--gold);font-size:11px">Июль–Сентябрь 2026</td></tr><tr><td style="padding:7px 0;color:var(--cream2)">🇵🇱 Польша</td><td style="padding:7px 0;color:var(--gold);font-size:11px">Июнь 2026</td></tr><tr><td style="padding:7px 0;color:var(--cream2)">🇨🇿 Чехия</td><td style="padding:7px 0;color:var(--gold);font-size:11px">Июнь–Сентябрь 2026</td></tr><tr><td style="padding:7px 0;color:var(--cream2)">🇭🇺 Венгрия</td><td style="padding:7px 0;color:var(--gold);font-size:11px">Июнь 2026</td></tr>
           </table>
         </div>
 
@@ -902,13 +904,13 @@
           <div style="display:flex;align-items:center;gap:10px;margin-bottom:16px">
             <span style="font-size:20px">🌏</span>
             <div>
-              <div style="font-family:'DM Mono',monospace;font-size:10px;letter-spacing:0.15em;color:var(--gold3);text-transform:uppercase">Азия + ОАЭ · 2026</div>
-              <div style="font-family:'Playfair Display',serif;font-size:15px;color:var(--cream)">Top Universities</div>
+              <div style="font-size:10px;letter-spacing:0.15em;color:var(--gold3);text-transform:uppercase">Азия + ОАЭ · 2026</div>
+              <div style="font-size:15px;color:var(--cream)">Top Universities</div>
             </div>
           </div>
           <table style="width:100%;border-collapse:collapse;font-size:13px">
-            <tr style="border-bottom:1px solid var(--border)"><th style="text-align:left;padding:6px 0;font-family:'DM Mono';font-size:9px;letter-spacing:0.1em;color:var(--gold3);text-transform:uppercase">Вуз / Страна</th><th style="text-align:left;padding:6px 0;font-family:'DM Mono';font-size:9px;letter-spacing:0.1em;color:var(--gold3);text-transform:uppercase">Дедлайн</th></tr>
-            <tr><td style="padding:7px 0;color:var(--cream2)">NUS (Singapore)</td><td style="padding:7px 0;color:var(--gold);font-family:'DM Mono';font-size:11px">1 марта 2026</td></tr><tr><td style="padding:7px 0;color:var(--cream2)">NTU (Singapore)</td><td style="padding:7px 0;color:var(--gold);font-family:'DM Mono';font-size:11px">Март 2026</td></tr><tr><td style="padding:7px 0;color:var(--cream2)">KAIST (Korea)</td><td style="padding:7px 0;color:var(--gold);font-family:'DM Mono';font-size:11px">Октябрь 2025</td></tr><tr><td style="padding:7px 0;color:var(--cream2)">Seoul Nat. Uni</td><td style="padding:7px 0;color:var(--gold);font-family:'DM Mono';font-size:11px">Ноябрь 2025</td></tr><tr><td style="padding:7px 0;color:var(--cream2)">UTokyo (Japan)</td><td style="padding:7px 0;color:var(--gold);font-family:'DM Mono';font-size:11px">Декабрь 2025</td></tr><tr><td style="padding:7px 0;color:var(--cream2)">NYUAD (UAE)</td><td style="padding:7px 0;color:var(--gold);font-family:'DM Mono';font-size:11px">1 ноября 2025</td></tr><tr><td style="padding:7px 0;color:var(--cream2)">AUS / AUD (UAE)</td><td style="padding:7px 0;color:var(--gold);font-family:'DM Mono';font-size:11px">Январь–Апрель 2026</td></tr><tr><td style="padding:7px 0;color:var(--cream2)">Univ. of HK</td><td style="padding:7px 0;color:var(--gold);font-family:'DM Mono';font-size:11px">Декабрь 2025</td></tr>
+            <tr style="border-bottom:1px solid var(--border)"><th style="text-align:left;padding:6px 0;font-size:9px;letter-spacing:0.1em;color:var(--gold3);text-transform:uppercase">Вуз / Страна</th><th style="text-align:left;padding:6px 0;font-size:9px;letter-spacing:0.1em;color:var(--gold3);text-transform:uppercase">Дедлайн</th></tr>
+            <tr><td style="padding:7px 0;color:var(--cream2)">NUS (Singapore)</td><td style="padding:7px 0;color:var(--gold);font-size:11px">1 марта 2026</td></tr><tr><td style="padding:7px 0;color:var(--cream2)">NTU (Singapore)</td><td style="padding:7px 0;color:var(--gold);font-size:11px">Март 2026</td></tr><tr><td style="padding:7px 0;color:var(--cream2)">KAIST (Korea)</td><td style="padding:7px 0;color:var(--gold);font-size:11px">Октябрь 2025</td></tr><tr><td style="padding:7px 0;color:var(--cream2)">Seoul Nat. Uni</td><td style="padding:7px 0;color:var(--gold);font-size:11px">Ноябрь 2025</td></tr><tr><td style="padding:7px 0;color:var(--cream2)">UTokyo (Japan)</td><td style="padding:7px 0;color:var(--gold);font-size:11px">Декабрь 2025</td></tr><tr><td style="padding:7px 0;color:var(--cream2)">NYUAD (UAE)</td><td style="padding:7px 0;color:var(--gold);font-size:11px">1 ноября 2025</td></tr><tr><td style="padding:7px 0;color:var(--cream2)">AUS / AUD (UAE)</td><td style="padding:7px 0;color:var(--gold);font-size:11px">Январь–Апрель 2026</td></tr><tr><td style="padding:7px 0;color:var(--cream2)">Univ. of HK</td><td style="padding:7px 0;color:var(--gold);font-size:11px">Декабрь 2025</td></tr>
           </table>
         </div>
 
@@ -917,13 +919,13 @@
           <div style="display:flex;align-items:center;gap:10px;margin-bottom:16px">
             <span style="font-size:20px">🏆</span>
             <div>
-              <div style="font-family:'DM Mono',monospace;font-size:10px;letter-spacing:0.15em;color:var(--gold3);text-transform:uppercase">Стипендии · Дедлайны 2025–2026</div>
-              <div style="font-family:'Playfair Display',serif;font-size:15px;color:var(--cream)">Международные программы</div>
+              <div style="font-size:10px;letter-spacing:0.15em;color:var(--gold3);text-transform:uppercase">Стипендии · Дедлайны 2025–2026</div>
+              <div style="font-size:15px;color:var(--cream)">Международные программы</div>
             </div>
           </div>
           <table style="width:100%;border-collapse:collapse;font-size:13px">
-            <tr style="border-bottom:1px solid var(--border)"><th style="text-align:left;padding:6px 0;font-family:'DM Mono';font-size:9px;letter-spacing:0.1em;color:var(--gold3);text-transform:uppercase">Стипендия</th><th style="text-align:left;padding:6px 0;font-family:'DM Mono';font-size:9px;letter-spacing:0.1em;color:var(--gold3);text-transform:uppercase">Дедлайн</th></tr>
-            <tr><td style="padding:7px 0;color:var(--cream2)">Fulbright (USA)</td><td style="padding:7px 0;color:var(--gold);font-family:'DM Mono';font-size:11px">Октябрь 2025</td></tr><tr><td style="padding:7px 0;color:var(--cream2)">Chevening (UK)</td><td style="padding:7px 0;color:var(--gold);font-family:'DM Mono';font-size:11px">Ноябрь 2025</td></tr><tr><td style="padding:7px 0;color:var(--cream2)">Commonwealth (UK)</td><td style="padding:7px 0;color:var(--gold);font-family:'DM Mono';font-size:11px">Декабрь 2025</td></tr><tr><td style="padding:7px 0;color:var(--cream2)">DAAD (Germany)</td><td style="padding:7px 0;color:var(--gold);font-family:'DM Mono';font-size:11px">Октябрь–Нояб 2025</td></tr><tr><td style="padding:7px 0;color:var(--cream2)">Erasmus Mundus</td><td style="padding:7px 0;color:var(--gold);font-family:'DM Mono';font-size:11px">Октябрь 2025 / Янв 2026</td></tr><tr><td style="padding:7px 0;color:var(--cream2)">MEXT (Japan)</td><td style="padding:7px 0;color:var(--gold);font-family:'DM Mono';font-size:11px">Май–Июнь 2025</td></tr><tr><td style="padding:7px 0;color:var(--cream2)">CSC (China)</td><td style="padding:7px 0;color:var(--gold);font-family:'DM Mono';font-size:11px">Март–Апрель 2026</td></tr><tr><td style="padding:7px 0;color:var(--cream2)">Lester B. Pearson (UofT)</td><td style="padding:7px 0;color:var(--gold);font-family:'DM Mono';font-size:11px">Ноябрь 2025</td></tr>
+            <tr style="border-bottom:1px solid var(--border)"><th style="text-align:left;padding:6px 0;font-size:9px;letter-spacing:0.1em;color:var(--gold3);text-transform:uppercase">Стипендия</th><th style="text-align:left;padding:6px 0;font-size:9px;letter-spacing:0.1em;color:var(--gold3);text-transform:uppercase">Дедлайн</th></tr>
+            <tr><td style="padding:7px 0;color:var(--cream2)">Fulbright (USA)</td><td style="padding:7px 0;color:var(--gold);font-size:11px">Октябрь 2025</td></tr><tr><td style="padding:7px 0;color:var(--cream2)">Chevening (UK)</td><td style="padding:7px 0;color:var(--gold);font-size:11px">Ноябрь 2025</td></tr><tr><td style="padding:7px 0;color:var(--cream2)">Commonwealth (UK)</td><td style="padding:7px 0;color:var(--gold);font-size:11px">Декабрь 2025</td></tr><tr><td style="padding:7px 0;color:var(--cream2)">DAAD (Germany)</td><td style="padding:7px 0;color:var(--gold);font-size:11px">Октябрь–Нояб 2025</td></tr><tr><td style="padding:7px 0;color:var(--cream2)">Erasmus Mundus</td><td style="padding:7px 0;color:var(--gold);font-size:11px">Октябрь 2025 / Янв 2026</td></tr><tr><td style="padding:7px 0;color:var(--cream2)">MEXT (Japan)</td><td style="padding:7px 0;color:var(--gold);font-size:11px">Май–Июнь 2025</td></tr><tr><td style="padding:7px 0;color:var(--cream2)">CSC (China)</td><td style="padding:7px 0;color:var(--gold);font-size:11px">Март–Апрель 2026</td></tr><tr><td style="padding:7px 0;color:var(--cream2)">Lester B. Pearson (UofT)</td><td style="padding:7px 0;color:var(--gold);font-size:11px">Ноябрь 2025</td></tr>
           </table>
         </div>
       </div>
@@ -933,9 +935,9 @@
         <div style="position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--gold),transparent)"></div>
         <div style="display:flex;align-items:center;gap:10px;margin-bottom:20px">
           <div style="width:8px;height:8px;background:var(--gold);border-radius:50%;animation:pulse 2s infinite"></div>
-          <div style="font-family:'DM Mono',monospace;font-size:10px;letter-spacing:0.2em;color:var(--gold3);text-transform:uppercase">AI · Результат живого поиска</div>
+          <div style="font-size:10px;letter-spacing:0.2em;color:var(--gold3);text-transform:uppercase">AI · Результат живого поиска</div>
         </div>
-        <div id="dl-ai-content" style="font-family:'EB Garamond',serif;font-size:15px;line-height:1.8;color:var(--cream2)"></div>
+        <div id="dl-ai-content" style="font-size:15px;line-height:1.8;color:var(--cream2)"></div>
       </div>
     </div>
     <footer><em>Entrium</em> &nbsp;·&nbsp; Твой большой брат по поступлению &nbsp;·&nbsp; 2025</footer>
@@ -945,7 +947,7 @@
   <section id="section-portfolio" class="section">
     <div style="max-width:1000px;margin:0 auto;padding:48px 40px">
       <div style="text-align:center;margin-bottom:48px">
-        <h1 style="font-family:'Playfair Display',serif;font-size:36px;color:var(--cream);margin-bottom:8px">Ресурсы для <em style="font-style:italic;background:linear-gradient(135deg,var(--gold),var(--gold2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">портфолио</em></h1>
+        <h1 style="font-size:36px;color:var(--cream);margin-bottom:8px">Ресурсы для <em style="font-style:italic;background:linear-gradient(135deg,var(--gold),var(--gold2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">портфолио</em></h1>
         <p style="font-style:italic;color:var(--cream3);font-size:16px">Платформы, инструменты и идеи по специальности — всё для сильной заявки</p>
       </div>
 
@@ -960,17 +962,17 @@
             <div style="display:flex;align-items:center;gap:12px">
               <div style="width:36px;height:36px;background:rgba(90,170,120,0.12);border:1px solid #5aaa7840;display:flex;align-items:center;justify-content:center;font-size:16px">📄</div>
               <div>
-                <div style="font-family:'DM Mono',monospace;font-size:9px;letter-spacing:0.2em;color:#5aaa78;text-transform:uppercase">ATS · Harvard Format</div>
-                <div style="font-family:'Playfair Display',serif;font-size:15px;color:var(--cream)">Zarnigorkhon Usmanova</div>
+                <div style="font-size:9px;letter-spacing:0.2em;color:#5aaa78;text-transform:uppercase">ATS · Harvard Format</div>
+                <div style="font-size:15px;color:var(--cream)">Zarnigorkhon Usmanova</div>
               </div>
             </div>
-            <span id="ats-toggle-icon" style="font-family:'DM Mono',monospace;font-size:10px;color:var(--gold3)">▼ ОТКРЫТЬ</span>
+            <span id="ats-toggle-icon" style="font-size:10px;color:var(--gold3)">▼ ОТКРЫТЬ</span>
           </div>
           <div style="padding:16px 24px;display:flex;gap:8px;flex-wrap:wrap">
-            <span style="font-family:'DM Mono',monospace;font-size:9px;padding:3px 8px;border:1px solid #5aaa7840;color:#5aaa78">✓ ATS-совместимо</span>
-            <span style="font-family:'DM Mono',monospace;font-size:9px;padding:3px 8px;border:1px solid var(--border);color:var(--cream3)">PR / Communications</span>
-            <span style="font-family:'DM Mono',monospace;font-size:9px;padding:3px 8px;border:1px solid var(--border);color:var(--cream3)">6+ лет опыта</span>
-            <span style="font-family:'DM Mono',monospace;font-size:9px;padding:3px 8px;border:1px solid var(--border);color:var(--cream3)">NGO · UN · EU</span>
+            <span style="font-size:9px;padding:3px 8px;border:1px solid #5aaa7840;color:#5aaa78">✓ ATS-совместимо</span>
+            <span style="font-size:9px;padding:3px 8px;border:1px solid var(--border);color:var(--cream3)">PR / Communications</span>
+            <span style="font-size:9px;padding:3px 8px;border:1px solid var(--border);color:var(--cream3)">6+ лет опыта</span>
+            <span style="font-size:9px;padding:3px 8px;border:1px solid var(--border);color:var(--cream3)">NGO · UN · EU</span>
           </div>
         </div>
 
@@ -981,25 +983,25 @@
             <div style="display:flex;align-items:center;gap:12px">
               <div style="width:36px;height:36px;background:rgba(74,158,196,0.12);border:1px solid #4a9ec440;display:flex;align-items:center;justify-content:center;font-size:16px">🇪🇺</div>
               <div>
-                <div style="font-family:'DM Mono',monospace;font-size:9px;letter-spacing:0.2em;color:#4a9ec4;text-transform:uppercase">Europass · EU Standard</div>
-                <div style="font-family:'Playfair Display',serif;font-size:15px;color:var(--cream)">Muxammad Sulton Sultonov</div>
+                <div style="font-size:9px;letter-spacing:0.2em;color:#4a9ec4;text-transform:uppercase">Europass · EU Standard</div>
+                <div style="font-size:15px;color:var(--cream)">Muxammad Sulton Sultonov</div>
               </div>
             </div>
-            <span id="europass-toggle-icon" style="font-family:'DM Mono',monospace;font-size:10px;color:var(--gold3)">▼ ОТКРЫТЬ</span>
+            <span id="europass-toggle-icon" style="font-size:10px;color:var(--gold3)">▼ ОТКРЫТЬ</span>
           </div>
           <div style="padding:16px 24px;display:flex;gap:8px;flex-wrap:wrap">
-            <span style="font-family:'DM Mono',monospace;font-size:9px;padding:3px 8px;border:1px solid #4a9ec440;color:#4a9ec4">✓ Europass стандарт</span>
-            <span style="font-family:'DM Mono',monospace;font-size:9px;padding:3px 8px;border:1px solid var(--border);color:var(--cream3)">Economics / Business</span>
-            <span style="font-family:'DM Mono',monospace;font-size:9px;padding:3px 8px;border:1px solid var(--border);color:var(--cream3)">Foundation → Bachelor</span>
-            <span style="font-family:'DM Mono',monospace;font-size:9px;padding:3px 8px;border:1px solid var(--border);color:var(--cream3)">2 публикации · 2025</span>
+            <span style="font-size:9px;padding:3px 8px;border:1px solid #4a9ec440;color:#4a9ec4">✓ Europass стандарт</span>
+            <span style="font-size:9px;padding:3px 8px;border:1px solid var(--border);color:var(--cream3)">Economics / Business</span>
+            <span style="font-size:9px;padding:3px 8px;border:1px solid var(--border);color:var(--cream3)">Foundation → Bachelor</span>
+            <span style="font-size:9px;padding:3px 8px;border:1px solid var(--border);color:var(--cream3)">2 публикации · 2025</span>
           </div>
         </div>
       </div>
 
       <!-- ATS CV FULL VIEW -->
       <div id="cv-ats" style="display:none;margin-bottom:48px">
-        <div style="background:#fff;color:#1a1a1a;padding:48px;font-family:'Arial',sans-serif;font-size:13px;line-height:1.6;border:1px solid var(--border);position:relative;max-width:800px;margin:0 auto">
-          <div style="position:absolute;top:12px;right:12px;font-family:'DM Mono',monospace;font-size:9px;padding:4px 10px;background:#5aaa7815;border:1px solid #5aaa7840;color:#5aaa78">ATS-СОВМЕСТИМО</div>
+        <div style="background:#fff;color:#1a1a1a;padding:48px;font-size:13px;line-height:1.6;border:1px solid var(--border);position:relative;max-width:800px;margin:0 auto">
+          <div style="position:absolute;top:12px;right:12px;font-size:9px;padding:4px 10px;background:#5aaa7815;border:1px solid #5aaa7840;color:#5aaa78">ATS-СОВМЕСТИМО</div>
           <!-- Header -->
           <div style="border-bottom:2px solid #1a1a1a;padding-bottom:12px;margin-bottom:16px">
             <div style="font-size:22px;font-weight:700;letter-spacing:0.5px;margin-bottom:4px">ZARNIGORKHON USMANOVA</div>
@@ -1041,14 +1043,14 @@
           </ul>
         </div>
         <div style="text-align:center;margin-top:12px">
-          <div style="font-family:'DM Mono',monospace;font-size:10px;color:var(--cream3)">💡 ATS формат: одна колонка, стандартные шрифты, без таблиц и графики — читается любым HR-ботом</div>
+          <div style="font-size:10px;color:var(--cream3)">💡 ATS формат: одна колонка, стандартные шрифты, без таблиц и графики — читается любым HR-ботом</div>
         </div>
       </div>
 
       <!-- EUROPASS CV FULL VIEW -->
       <div id="cv-europass" style="display:none;margin-bottom:48px">
-        <div style="background:#fff;color:#1a1a1a;font-family:'Arial',sans-serif;font-size:13px;line-height:1.6;border:1px solid var(--border);position:relative;max-width:800px;margin:0 auto;overflow:hidden">
-          <div style="position:absolute;top:12px;right:12px;font-family:'DM Mono',monospace;font-size:9px;padding:4px 10px;background:#003da515;border:1px solid #003da540;color:#003da5">EUROPASS СТАНДАРТ</div>
+        <div style="background:#fff;color:#1a1a1a;font-size:13px;line-height:1.6;border:1px solid var(--border);position:relative;max-width:800px;margin:0 auto;overflow:hidden">
+          <div style="position:absolute;top:12px;right:12px;font-size:9px;padding:4px 10px;background:#003da515;border:1px solid #003da540;color:#003da5">EUROPASS СТАНДАРТ</div>
           <!-- EU Header bar -->
           <div style="background:#003da5;padding:24px 32px;display:flex;align-items:center;gap:20px">
             <div style="width:80px;height:80px;background:#fff;border-radius:2px;display:flex;align-items:center;justify-content:center;font-size:36px;flex-shrink:0">👤</div>
@@ -1128,7 +1130,7 @@
           </div>
         </div>
         <div style="text-align:center;margin-top:12px">
-          <div style="font-family:'DM Mono',monospace;font-size:10px;color:var(--cream3)">💡 Europass формат: стандарт ЕС — обязателен для Германии, Нидерландов, Бельгии, Польши и большинства европейских университетов</div>
+          <div style="font-size:10px;color:var(--cream3)">💡 Europass формат: стандарт ЕС — обязателен для Германии, Нидерландов, Бельгии, Польши и большинства европейских университетов</div>
         </div>
       </div>
 
@@ -1138,7 +1140,7 @@
         <div class="section-label" style="margin-bottom:16px">Когда какой формат использовать</div>
         <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px">
           <div>
-            <div style="font-family:'DM Mono',monospace;font-size:10px;letter-spacing:0.15em;color:#5aaa78;margin-bottom:10px">📄 ATS (Harvard / Американский)</div>
+            <div style="font-size:10px;letter-spacing:0.15em;color:#5aaa78;margin-bottom:10px">📄 ATS (Harvard / Американский)</div>
             <div style="font-size:13px;color:var(--cream2);line-height:1.7">
               Используй для: <strong style="color:var(--cream)">США, Канада, Великобритания, Австралия, Сингапур</strong><br>
               Требования: одна колонка, стандартный шрифт Arial/Calibri, без таблиц, без фото, без цветов<br>
@@ -1146,7 +1148,7 @@
             </div>
           </div>
           <div>
-            <div style="font-family:'DM Mono',monospace;font-size:10px;letter-spacing:0.15em;color:#4a9ec4;margin-bottom:10px">🇪🇺 Europass (Европейский стандарт)</div>
+            <div style="font-size:10px;letter-spacing:0.15em;color:#4a9ec4;margin-bottom:10px">🇪🇺 Europass (Европейский стандарт)</div>
             <div style="font-size:13px;color:var(--cream2);line-height:1.7">
               Используй для: <strong style="color:var(--cream)">Германия, Нидерланды, Франция, Италия, Польша, Чехия</strong><br>
               Требования: строгая структура ЕС, обязательна таблица языков, фото приветствуется<br>
@@ -1179,7 +1181,7 @@
   <section id="section-checklist" class="section">
     <div style="max-width:960px;margin:0 auto;padding:40px">
       <div style="text-align:center;margin-bottom:36px">
-        <h1 style="font-family:'Playfair Display',serif;font-size:34px;color:var(--cream);margin-bottom:8px">Чеклист <em style="background:linear-gradient(135deg,var(--gold),var(--gold2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">поступающего</em></h1>
+        <h1 style="font-size:34px;color:var(--cream);margin-bottom:8px">Чеклист <em style="background:linear-gradient(135deg,var(--gold),var(--gold2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">поступающего</em></h1>
         <p style="font-style:italic;color:var(--cream3);font-size:15px">Общие чеклисты для США и Европы + персональный AI чеклист под тебя</p>
       </div>
       <div style="display:flex;gap:0;border:1px solid var(--border);margin-bottom:28px;overflow:hidden">
@@ -1221,7 +1223,7 @@
               <label class="form-label">Дата подачи заявки (примерно)</label>
               <input id="cl-deadline" class="form-input" placeholder="1 ноября 2025, январь 2026...">
             </div>
-            <button onclick="generatePersonalChecklist()" id="cl-gen-btn" style="background:linear-gradient(135deg,var(--gold3),var(--gold));color:var(--bg);font-family:'Cinzel',serif;font-size:12px;letter-spacing:0.18em;padding:14px 28px;border:none;cursor:pointer;width:100%">
+            <button onclick="generatePersonalChecklist()" id="cl-gen-btn" style="background:linear-gradient(135deg,var(--gold3),var(--gold));color:var(--bg);font-size:12px;letter-spacing:0.18em;padding:14px 28px;border:none;cursor:pointer;width:100%">
               ✦ СОЗДАТЬ МОЙ ПЕРСОНАЛЬНЫЙ ЧЕКЛИСТ
             </button>
           </div>
@@ -1229,18 +1231,18 @@
         <div id="cl-personal-dashboard" style="display:none">
           <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:20px;flex-wrap:wrap;gap:10px">
             <div>
-              <div id="cl-dash-name" style="font-family:'Playfair Display',serif;font-size:20px;color:var(--cream)"></div>
-              <div id="cl-dash-sub" style="font-family:'DM Mono',monospace;font-size:9px;color:var(--cream3);margin-top:3px"></div>
+              <div id="cl-dash-name" style="font-size:20px;color:var(--cream)"></div>
+              <div id="cl-dash-sub" style="font-size:9px;color:var(--cream3);margin-top:3px"></div>
             </div>
             <div style="display:flex;gap:8px">
-              <button onclick="downloadChecklistPDF()" style="background:linear-gradient(135deg,#2a6a2a,#5aaa78);color:#fff;font-family:'DM Mono',monospace;font-size:9px;letter-spacing:0.1em;padding:9px 16px;border:none;cursor:pointer">⬇ PDF</button>
-              <button onclick="resetPersonalChecklist()" style="background:transparent;border:1px solid var(--border);color:var(--cream3);font-family:'DM Mono',monospace;font-size:9px;padding:9px 14px;cursor:pointer">↺ НОВЫЙ</button>
+              <button onclick="downloadChecklistPDF()" style="background:linear-gradient(135deg,#2a6a2a,#5aaa78);color:#fff;font-size:9px;letter-spacing:0.1em;padding:9px 16px;border:none;cursor:pointer">⬇ PDF</button>
+              <button onclick="resetPersonalChecklist()" style="background:transparent;border:1px solid var(--border);color:var(--cream3);font-size:9px;padding:9px 14px;cursor:pointer">↺ НОВЫЙ</button>
             </div>
           </div>
           <div style="background:var(--bg1);border:1px solid var(--border);padding:16px 20px;margin-bottom:20px">
             <div style="display:flex;justify-content:space-between;margin-bottom:8px">
-              <span style="font-family:'DM Mono',monospace;font-size:9px;color:var(--cream3)">ПРОГРЕСС</span>
-              <span id="cl-pct" style="font-family:'DM Mono',monospace;font-size:12px;color:var(--gold3);font-weight:700">0%</span>
+              <span style="font-size:9px;color:var(--cream3)">ПРОГРЕСС</span>
+              <span id="cl-pct" style="font-size:12px;color:var(--gold3);font-weight:700">0%</span>
             </div>
             <div style="height:5px;background:var(--border);border-radius:3px"><div id="cl-bar" style="height:100%;width:0%;background:linear-gradient(90deg,var(--gold3),var(--gold));transition:width 0.5s;border-radius:3px"></div></div>
           </div>
@@ -1255,7 +1257,7 @@
   <section id="section-essay" class="section">
     <div style="max-width:900px;margin:0 auto;padding:48px 40px">
       <div style="text-align:center;margin-bottom:40px">
-        <h1 style="font-family:'Playfair Display',serif;font-size:36px;color:var(--cream);margin-bottom:8px"><em style="font-style:italic;background:linear-gradient(135deg,var(--gold),var(--gold2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">AI Essay Coach</em></h1>
+        <h1 style="font-size:36px;color:var(--cream);margin-bottom:8px"><em style="font-style:italic;background:linear-gradient(135deg,var(--gold),var(--gold2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">AI Essay Coach</em></h1>
         <p style="font-style:italic;color:var(--cream3);font-size:16px">Тренер · Анализ ошибок · Humanizer для Ivy League</p>
       </div>
 
@@ -1298,7 +1300,7 @@
               <button class="ctag" onclick="toggleFocusTag(this,'full')">🔄 Полная переработка</button>
             </div>
           </div>
-          <button onclick="runEssayCoach()" style="background:linear-gradient(135deg,var(--gold3),var(--gold));color:var(--bg);font-family:'Cinzel',serif;font-size:12px;letter-spacing:0.15em;padding:13px 28px;border:none;cursor:pointer;width:100%;transition:all 0.3s">
+          <button onclick="runEssayCoach()" style="background:linear-gradient(135deg,var(--gold3),var(--gold));color:var(--bg);font-size:12px;letter-spacing:0.15em;padding:13px 28px;border:none;cursor:pointer;width:100%;transition:all 0.3s">
             ✍️ НАЧАТЬ РАБОТУ С ТРЕНЕРОМ
           </button>
         </div>
@@ -1331,7 +1333,7 @@
               </select>
             </div>
           </div>
-          <button onclick="runEssayAnalysis()" style="background:linear-gradient(135deg,#8b1010,#e05050);color:#fff;font-family:'Cinzel',serif;font-size:12px;letter-spacing:0.15em;padding:13px 28px;border:none;cursor:pointer;width:100%;transition:all 0.3s">
+          <button onclick="runEssayAnalysis()" style="background:linear-gradient(135deg,#8b1010,#e05050);color:#fff;font-size:12px;letter-spacing:0.15em;padding:13px 28px;border:none;cursor:pointer;width:100%;transition:all 0.3s">
             🔬 РАЗОБРАТЬ ПО КОСТОЧКАМ
           </button>
         </div>
@@ -1344,7 +1346,7 @@
           <div style="position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,#9b6fc4,transparent)"></div>
           <div class="section-label" style="margin-bottom:16px">Humanizer · Ivy League стиль</div>
           <div style="background:rgba(155,111,196,0.06);border:1px solid rgba(155,111,196,0.2);padding:14px;border-radius:4px;margin-bottom:16px">
-            <div style="font-family:'DM Mono',monospace;font-size:10px;color:#9b6fc4;letter-spacing:0.1em;margin-bottom:6px">ЧТО ДЕЛАЕТ HUMANIZER</div>
+            <div style="font-size:10px;color:#9b6fc4;letter-spacing:0.1em;margin-bottom:6px">ЧТО ДЕЛАЕТ HUMANIZER</div>
             <div style="font-size:13px;color:var(--cream2);line-height:1.6">Убирает AI-паттерны → добавляет живой голос → выстраивает Ivy League тон → сохраняет твои идеи, но делает текст звучащим как умный 17-летний человек, а не как ChatGPT.</div>
           </div>
           <div style="margin-bottom:16px">
@@ -1366,7 +1368,7 @@
               <input type="text" id="eh-uni" class="form-input" placeholder="Harvard, Princeton...">
             </div>
           </div>
-          <button onclick="runHumanizer()" style="background:linear-gradient(135deg,#5a2d8a,#9b6fc4);color:#fff;font-family:'Cinzel',serif;font-size:12px;letter-spacing:0.15em;padding:13px 28px;border:none;cursor:pointer;width:100%;transition:all 0.3s">
+          <button onclick="runHumanizer()" style="background:linear-gradient(135deg,#5a2d8a,#9b6fc4);color:#fff;font-size:12px;letter-spacing:0.15em;padding:13px 28px;border:none;cursor:pointer;width:100%;transition:all 0.3s">
             🧠 ГУМАНИЗИРОВАТЬ ТЕКСТ
           </button>
         </div>
@@ -1380,11 +1382,11 @@
           <div style="display:flex;align-items:center;gap:12px;margin-bottom:24px;padding-bottom:20px;border-bottom:1px solid var(--border)">
             <div style="width:36px;height:36px;background:rgba(201,168,76,0.1);border:1px solid var(--gold3);display:flex;align-items:center;justify-content:center;font-size:16px">✍️</div>
             <div>
-              <div style="font-family:'DM Mono',monospace;font-size:10px;letter-spacing:0.2em;color:var(--gold3);text-transform:uppercase">LLM Application · LSE</div>
-              <div style="font-family:'Playfair Display',serif;font-size:15px;color:var(--cream)">Human Rights & Politics → Cybersecurity Law</div>
+              <div style="font-size:10px;letter-spacing:0.2em;color:var(--gold3);text-transform:uppercase">LLM Application · LSE</div>
+              <div style="font-size:15px;color:var(--cream)">Human Rights & Politics → Cybersecurity Law</div>
             </div>
           </div>
-          <div style="font-family:'EB Garamond',serif;font-size:16px;line-height:1.9;color:var(--cream2)">
+          <div style="font-size:16px;line-height:1.9;color:var(--cream2)">
             <p style="margin-bottom:16px">Motivation is fueled by a deep passion for the pursuit of justice and positive societal change, and for me, this journey began in 2021 when I made the conscious decision to dedicate my life to the fields of human rights and politics.</p>
             <p style="margin-bottom:16px">Growing up in Uzbekistan, I was constantly exposed to the complexities of political systems and the often-fragile nature of legal institutions. As a teenager, I witnessed a serious violation of human rights that left me feeling powerless — this event ignited within me a burning desire to understand why such violations persist and, more importantly, how I could work to prevent them.</p>
             <p style="margin-bottom:16px">My current research focuses on the <strong style="color:var(--cream)">legal and political dimensions of cybersecurity in Central Asia</strong> — a region that has rapidly digitalized but remains vulnerable to new threats. This issue is not just regional; it has global implications for protecting intellectual property, safeguarding personal data, and ensuring fair governance.</p>
@@ -1411,8 +1413,8 @@
   <section id="section-scholarships" class="section">
     <div style="max-width:1060px;margin:0 auto;padding:40px">
       <div style="text-align:center;margin-bottom:32px">
-        <div style="display:inline-flex;align-items:center;gap:8px;background:rgba(90,170,120,0.08);border:1px solid rgba(90,170,120,0.3);color:#5aaa78;font-family:'DM Mono',monospace;font-size:9px;letter-spacing:0.2em;padding:7px 16px;margin-bottom:14px">💰 БАЗА СТИПЕНДИЙ 2025–2026</div>
-        <h1 style="font-family:'Playfair Display',serif;font-size:32px;color:var(--cream);margin-bottom:8px">Стипендии для <em style="background:linear-gradient(135deg,var(--gold),var(--gold2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">международных студентов</em></h1>
+        <div style="display:inline-flex;align-items:center;gap:8px;background:rgba(90,170,120,0.08);border:1px solid rgba(90,170,120,0.3);color:#5aaa78;font-size:9px;letter-spacing:0.2em;padding:7px 16px;margin-bottom:14px">💰 БАЗА СТИПЕНДИЙ 2025–2026</div>
+        <h1 style="font-size:32px;color:var(--cream);margin-bottom:8px">Стипендии для <em style="background:linear-gradient(135deg,var(--gold),var(--gold2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">международных студентов</em></h1>
         <p style="color:var(--cream3);font-size:14px;font-style:italic">300+ стипендий · Фильтры по стране и сумме · AI калькулятор соответствия</p>
       </div>
 
@@ -1447,7 +1449,7 @@
             </select>
           </div>
         </div>
-        <div id="sc-count" style="font-family:'DM Mono',monospace;font-size:9px;color:var(--cream3);margin-bottom:12px;letter-spacing:0.1em"></div>
+        <div id="sc-count" style="font-size:9px;color:var(--cream3);margin-bottom:12px;letter-spacing:0.1em"></div>
         <div id="sc-grid" style="display:grid;gap:12px"></div>
         <div id="sc-pagination" style="display:flex;gap:6px;justify-content:center;margin-top:20px"></div>
       </div>
@@ -1470,7 +1472,7 @@
           <div style="margin-bottom:20px"><label class="form-label">Достижения и активности</label>
             <textarea id="sc-c-extra" class="form-textarea" style="min-height:70px" placeholder="Волонтёрство, лидерство, публикации, награды..."></textarea>
           </div>
-          <button onclick="runScholarCalc()" style="background:linear-gradient(135deg,#2a6a2a,#5aaa78);color:#fff;font-family:'Cinzel',serif;font-size:12px;letter-spacing:0.15em;padding:14px 28px;border:none;cursor:pointer;width:100%">🧮 НАЙТИ МОИ СТИПЕНДИИ</button>
+          <button onclick="runScholarCalc()" style="background:linear-gradient(135deg,#2a6a2a,#5aaa78);color:#fff;font-size:12px;letter-spacing:0.15em;padding:14px 28px;border:none;cursor:pointer;width:100%">🧮 НАЙТИ МОИ СТИПЕНДИИ</button>
         </div>
         <div id="sc-calc-result" style="display:none"></div>
       </div>
@@ -1483,7 +1485,7 @@
           <div style="margin-bottom:16px"><label class="form-label">Поисковый запрос</label>
             <input id="sc-ai-q" class="form-input" placeholder="Стипендии для студентов из Узбекистана в Германии на магистратуру по IT...">
           </div>
-          <button onclick="runScholarAI()" style="background:linear-gradient(135deg,#5a2d8a,#9b6fc4);color:#fff;font-family:'Cinzel',serif;font-size:12px;letter-spacing:0.15em;padding:14px 28px;border:none;cursor:pointer;width:100%">🔍 НАЙТИ В ИНТЕРНЕТЕ</button>
+          <button onclick="runScholarAI()" style="background:linear-gradient(135deg,#5a2d8a,#9b6fc4);color:#fff;font-size:12px;letter-spacing:0.15em;padding:14px 28px;border:none;cursor:pointer;width:100%">🔍 НАЙТИ В ИНТЕРНЕТЕ</button>
         </div>
         <div id="sc-ai-result" style="display:none"></div>
       </div>
@@ -1495,8 +1497,8 @@
   <section id="section-stories" class="section">
     <div style="max-width:960px;margin:0 auto;padding:40px">
       <div style="text-align:center;margin-bottom:36px">
-        <div style="display:inline-flex;align-items:center;gap:8px;background:rgba(201,168,76,0.08);border:1px solid rgba(201,168,76,0.3);color:var(--gold3);font-family:'DM Mono',monospace;font-size:9px;letter-spacing:0.2em;padding:7px 16px;margin-bottom:14px">✦ ИСТОРИИ УСПЕХА</div>
-        <h1 style="font-family:'Playfair Display',serif;font-size:32px;color:var(--cream);margin-bottom:8px">Реальные <em style="background:linear-gradient(135deg,var(--gold),var(--gold2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">истории поступления</em></h1>
+        <div style="display:inline-flex;align-items:center;gap:8px;background:rgba(201,168,76,0.08);border:1px solid rgba(201,168,76,0.3);color:var(--gold3);font-size:9px;letter-spacing:0.2em;padding:7px 16px;margin-bottom:14px">✦ ИСТОРИИ УСПЕХА</div>
+        <h1 style="font-size:32px;color:var(--cream);margin-bottom:8px">Реальные <em style="background:linear-gradient(135deg,var(--gold),var(--gold2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">истории поступления</em></h1>
         <p style="color:var(--cream3);font-size:14px;font-style:italic">Студенты из Узбекистана, которые поступили в топ-университеты мира</p>
       </div>
       <div id="stories-grid" style="display:grid;gap:20px"></div>
@@ -1508,8 +1510,8 @@
   <section id="section-interview" class="section">
     <div style="max-width:900px;margin:0 auto;padding:40px">
       <div style="text-align:center;margin-bottom:32px">
-        <div style="display:inline-flex;align-items:center;gap:8px;background:rgba(155,111,196,0.08);border:1px solid rgba(155,111,196,0.3);color:#9b6fc4;font-family:'DM Mono',monospace;font-size:9px;letter-spacing:0.2em;padding:7px 16px;margin-bottom:14px">🎤 AI ИНТЕРВЬЮ-ТРЕНЕР</div>
-        <h1 style="font-family:'Playfair Display',serif;font-size:32px;color:var(--cream);margin-bottom:8px">Подготовка к <em style="background:linear-gradient(135deg,#9b6fc4,#c4a0e8);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">admission interview</em></h1>
+        <div style="display:inline-flex;align-items:center;gap:8px;background:rgba(155,111,196,0.08);border:1px solid rgba(155,111,196,0.3);color:#9b6fc4;font-size:9px;letter-spacing:0.2em;padding:7px 16px;margin-bottom:14px">🎤 AI ИНТЕРВЬЮ-ТРЕНЕР</div>
+        <h1 style="font-size:32px;color:var(--cream);margin-bottom:8px">Подготовка к <em style="background:linear-gradient(135deg,#9b6fc4,#c4a0e8);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">admission interview</em></h1>
         <p style="color:var(--cream3);font-size:14px;font-style:italic">Реальные вопросы · AI-оценка ответов · Разбор ошибок</p>
       </div>
       <div id="iv-setup">
@@ -1534,27 +1536,27 @@
           <div style="margin-bottom:16px"><label class="form-label">Коротко о себе</label>
             <textarea id="iv-about" class="form-textarea" style="min-height:70px" placeholder="GPA 4.5, IELTS 7.5, волонтёрство, исследование по ML..."></textarea>
           </div>
-          <button onclick="startInterview()" id="iv-start-btn" style="background:linear-gradient(135deg,#5a2d8a,#9b6fc4);color:#fff;font-family:'Cinzel',serif;font-size:12px;letter-spacing:0.18em;padding:14px 28px;border:none;cursor:pointer;width:100%">🎤 НАЧАТЬ ИНТЕРВЬЮ</button>
+          <button onclick="startInterview()" id="iv-start-btn" style="background:linear-gradient(135deg,#5a2d8a,#9b6fc4);color:#fff;font-size:12px;letter-spacing:0.18em;padding:14px 28px;border:none;cursor:pointer;width:100%">🎤 НАЧАТЬ ИНТЕРВЬЮ</button>
         </div>
       </div>
       <div id="iv-session" style="display:none">
         <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:16px;flex-wrap:wrap;gap:10px">
-          <div id="iv-title" style="font-family:'Playfair Display',serif;font-size:18px;color:var(--cream)"></div>
+          <div id="iv-title" style="font-size:18px;color:var(--cream)"></div>
           <div style="display:flex;align-items:center;gap:10px">
-            <div id="iv-progress-text" style="font-family:'DM Mono',monospace;font-size:9px;color:var(--cream3)"></div>
-            <button onclick="endInterview()" style="background:transparent;border:1px solid var(--border);color:var(--cream3);font-family:'DM Mono',monospace;font-size:9px;padding:7px 12px;cursor:pointer">✕ ЗАВЕРШИТЬ</button>
+            <div id="iv-progress-text" style="font-size:9px;color:var(--cream3)"></div>
+            <button onclick="endInterview()" style="background:transparent;border:1px solid var(--border);color:var(--cream3);font-size:9px;padding:7px 12px;cursor:pointer">✕ ЗАВЕРШИТЬ</button>
           </div>
         </div>
         <div style="height:3px;background:var(--border);border-radius:2px;margin-bottom:20px"><div id="iv-bar" style="height:100%;width:0%;background:linear-gradient(90deg,#9b6fc4,#c4a0e8);transition:width 0.5s;border-radius:2px"></div></div>
         <div id="iv-question-card" style="background:var(--bg1);border:1px solid var(--border);padding:28px;position:relative;margin-bottom:14px">
           <div style="position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,#9b6fc4,transparent)"></div>
-          <div id="iv-qnum" style="font-family:'DM Mono',monospace;font-size:9px;color:#9b6fc4;letter-spacing:0.15em;margin-bottom:10px"></div>
-          <div id="iv-question" style="font-family:'Playfair Display',serif;font-size:20px;color:var(--cream);line-height:1.5;margin-bottom:18px"></div>
-          <div style="font-family:'DM Mono',monospace;font-size:9px;color:var(--cream3);margin-bottom:8px">ТВОЙ ОТВЕТ</div>
+          <div id="iv-qnum" style="font-size:9px;color:#9b6fc4;letter-spacing:0.15em;margin-bottom:10px"></div>
+          <div id="iv-question" style="font-size:20px;color:var(--cream);line-height:1.5;margin-bottom:18px"></div>
+          <div style="font-size:9px;color:var(--cream3);margin-bottom:8px">ТВОЙ ОТВЕТ</div>
           <textarea id="iv-answer" class="form-textarea" style="min-height:110px" placeholder="Напиши ответ..."></textarea>
           <div style="display:flex;gap:10px;margin-top:12px">
-            <button onclick="submitAnswer()" id="iv-submit-btn" style="flex:1;background:linear-gradient(135deg,#5a2d8a,#9b6fc4);color:#fff;font-family:'Cinzel',serif;font-size:11px;letter-spacing:0.15em;padding:12px;border:none;cursor:pointer">ПОЛУЧИТЬ ОЦЕНКУ →</button>
-            <button onclick="skipQuestion()" style="background:transparent;border:1px solid var(--border);color:var(--cream3);font-family:'DM Mono',monospace;font-size:9px;padding:12px 14px;cursor:pointer">ПРОПУСТИТЬ</button>
+            <button onclick="submitAnswer()" id="iv-submit-btn" style="flex:1;background:linear-gradient(135deg,#5a2d8a,#9b6fc4);color:#fff;font-size:11px;letter-spacing:0.15em;padding:12px;border:none;cursor:pointer">ПОЛУЧИТЬ ОЦЕНКУ →</button>
+            <button onclick="skipQuestion()" style="background:transparent;border:1px solid var(--border);color:var(--cream3);font-size:9px;padding:12px 14px;cursor:pointer">ПРОПУСТИТЬ</button>
           </div>
         </div>
         <div id="iv-feedback" style="display:none;margin-bottom:14px"></div>
@@ -1569,8 +1571,8 @@
   <section id="section-costs" class="section">
     <div style="max-width:960px;margin:0 auto;padding:40px">
       <div style="text-align:center;margin-bottom:32px">
-        <div style="display:inline-flex;align-items:center;gap:8px;background:rgba(74,158,196,0.08);border:1px solid rgba(74,158,196,0.3);color:#4a9ec4;font-family:'DM Mono',monospace;font-size:9px;letter-spacing:0.2em;padding:7px 16px;margin-bottom:14px">🧮 КАЛЬКУЛЯТОР СТОИМОСТИ</div>
-        <h1 style="font-family:'Playfair Display',serif;font-size:32px;color:var(--cream);margin-bottom:8px">Полная стоимость <em style="background:linear-gradient(135deg,#4a9ec4,#7bc4e0);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">обучения за рубежом</em></h1>
+        <div style="display:inline-flex;align-items:center;gap:8px;background:rgba(74,158,196,0.08);border:1px solid rgba(74,158,196,0.3);color:#4a9ec4;font-size:9px;letter-spacing:0.2em;padding:7px 16px;margin-bottom:14px">🧮 КАЛЬКУЛЯТОР СТОИМОСТИ</div>
+        <h1 style="font-size:32px;color:var(--cream);margin-bottom:8px">Полная стоимость <em style="background:linear-gradient(135deg,#4a9ec4,#7bc4e0);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">обучения за рубежом</em></h1>
         <p style="color:var(--cream3);font-size:14px;font-style:italic">Tuition + жильё + питание + транспорт + страховка — реальные цифры</p>
       </div>
       <div style="display:grid;grid-template-columns:340px 1fr;gap:20px;align-items:start">
@@ -1593,12 +1595,12 @@
             </div>
             <div><label class="form-label">Стипендия ($/год)</label><input id="cc-scholarship" class="form-input" type="number" placeholder="0" value="0"></div>
           </div>
-          <button onclick="calcCosts()" style="background:linear-gradient(135deg,#1a5a7a,#4a9ec4);color:#fff;font-family:'Cinzel',serif;font-size:11px;letter-spacing:0.15em;padding:13px;border:none;cursor:pointer;width:100%;margin-top:16px">🧮 РАССЧИТАТЬ</button>
+          <button onclick="calcCosts()" style="background:linear-gradient(135deg,#1a5a7a,#4a9ec4);color:#fff;font-size:11px;letter-spacing:0.15em;padding:13px;border:none;cursor:pointer;width:100%;margin-top:16px">🧮 РАССЧИТАТЬ</button>
         </div>
         <div id="cc-result">
           <div style="background:var(--bg1);border:1px solid var(--border);padding:60px;text-align:center">
             <div style="font-size:48px;margin-bottom:12px;opacity:0.3">🧮</div>
-            <div style="font-family:'DM Mono',monospace;font-size:10px;color:var(--cream3);letter-spacing:0.15em">ЗАПОЛНИ ПАРАМЕТРЫ СЛЕВА</div>
+            <div style="font-size:10px;color:var(--cream3);letter-spacing:0.15em">ЗАПОЛНИ ПАРАМЕТРЫ СЛЕВА</div>
           </div>
         </div>
       </div>
@@ -1610,8 +1612,8 @@
   <section id="section-refletter" class="section">
     <div style="max-width:960px;margin:0 auto;padding:40px">
       <div style="text-align:center;margin-bottom:32px">
-        <div style="display:inline-flex;align-items:center;gap:8px;background:rgba(90,170,120,0.08);border:1px solid rgba(90,170,120,0.3);color:#5aaa78;font-family:'DM Mono',monospace;font-size:9px;letter-spacing:0.2em;padding:7px 16px;margin-bottom:14px">✉ AI РЕКОМЕНДАТЕЛЬНОЕ ПИСЬМО</div>
-        <h1 style="font-family:'Playfair Display',serif;font-size:32px;color:var(--cream);margin-bottom:8px">Рекомендательное <em style="background:linear-gradient(135deg,#5aaa78,#8fd4a0);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">письмо</em></h1>
+        <div style="display:inline-flex;align-items:center;gap:8px;background:rgba(90,170,120,0.08);border:1px solid rgba(90,170,120,0.3);color:#5aaa78;font-size:9px;letter-spacing:0.2em;padding:7px 16px;margin-bottom:14px">✉ AI РЕКОМЕНДАТЕЛЬНОЕ ПИСЬМО</div>
+        <h1 style="font-size:32px;color:var(--cream);margin-bottom:8px">Рекомендательное <em style="background:linear-gradient(135deg,#5aaa78,#8fd4a0);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">письмо</em></h1>
         <p style="color:var(--cream3);font-size:14px;font-style:italic">Заполни детали — AI напишет профессиональный черновик для учителя</p>
       </div>
       <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px">
@@ -1635,12 +1637,12 @@
               <select id="rl-lang" class="form-select"><option>English</option><option>Русский</option><option>German</option></select>
             </div>
           </div>
-          <button onclick="generateRefLetter()" id="rl-btn" style="background:linear-gradient(135deg,#2a6a2a,#5aaa78);color:#fff;font-family:'Cinzel',serif;font-size:11px;letter-spacing:0.15em;padding:13px;border:none;cursor:pointer;width:100%;margin-top:16px">✉ СГЕНЕРИРОВАТЬ ПИСЬМО</button>
+          <button onclick="generateRefLetter()" id="rl-btn" style="background:linear-gradient(135deg,#2a6a2a,#5aaa78);color:#fff;font-size:11px;letter-spacing:0.15em;padding:13px;border:none;cursor:pointer;width:100%;margin-top:16px">✉ СГЕНЕРИРОВАТЬ ПИСЬМО</button>
         </div>
         <div id="rl-result">
           <div style="background:var(--bg1);border:1px solid var(--border);padding:60px;text-align:center;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center">
             <div style="font-size:48px;margin-bottom:12px;opacity:0.3">✉</div>
-            <div style="font-family:'DM Mono',monospace;font-size:10px;color:var(--cream3);letter-spacing:0.15em">ЗАПОЛНИ ФОРМУ СЛЕВА</div>
+            <div style="font-size:10px;color:var(--cream3);letter-spacing:0.15em">ЗАПОЛНИ ФОРМУ СЛЕВА</div>
           </div>
         </div>
       </div>
@@ -1652,17 +1654,17 @@
   <section id="section-calendar" class="section">
     <div style="max-width:1060px;margin:0 auto;padding:40px">
       <div style="text-align:center;margin-bottom:32px">
-        <div style="display:inline-flex;align-items:center;gap:8px;background:rgba(224,80,80,0.08);border:1px solid rgba(224,80,80,0.3);color:#e05050;font-family:'DM Mono',monospace;font-size:9px;letter-spacing:0.2em;padding:7px 16px;margin-bottom:14px">📅 ВИЗУАЛЬНЫЙ КАЛЕНДАРЬ 2025–2026</div>
-        <h1 style="font-family:'Playfair Display',serif;font-size:32px;color:var(--cream);margin-bottom:8px">Календарь <em style="background:linear-gradient(135deg,var(--gold),var(--gold2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">дедлайнов</em></h1>
+        <div style="display:inline-flex;align-items:center;gap:8px;background:rgba(224,80,80,0.08);border:1px solid rgba(224,80,80,0.3);color:#e05050;font-size:9px;letter-spacing:0.2em;padding:7px 16px;margin-bottom:14px">📅 ВИЗУАЛЬНЫЙ КАЛЕНДАРЬ 2025–2026</div>
+        <h1 style="font-size:32px;color:var(--cream);margin-bottom:8px">Календарь <em style="background:linear-gradient(135deg,var(--gold),var(--gold2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">дедлайнов</em></h1>
         <p style="color:var(--cream3);font-size:14px;font-style:italic">Все ключевые даты на один взгляд — от EA до финальных дедлайнов</p>
       </div>
       <div style="display:flex;gap:16px;flex-wrap:wrap;margin-bottom:20px;padding:12px 18px;background:var(--bg1);border:1px solid var(--border)">
-        <span style="font-family:'DM Mono',monospace;font-size:9px;color:var(--cream3);letter-spacing:0.1em">ЛЕГЕНДА:</span>
-        <span style="display:inline-flex;align-items:center;gap:5px"><span style="width:10px;height:10px;background:#e05050;display:inline-block;border-radius:1px"></span><span style="font-family:'DM Mono',monospace;font-size:9px;color:var(--cream3)">EA/ED</span></span>
-        <span style="display:inline-flex;align-items:center;gap:5px"><span style="width:10px;height:10px;background:#c9a84c;display:inline-block;border-radius:1px"></span><span style="font-family:'DM Mono',monospace;font-size:9px;color:var(--cream3)">Regular</span></span>
-        <span style="display:inline-flex;align-items:center;gap:5px"><span style="width:10px;height:10px;background:#4a9ec4;display:inline-block;border-radius:1px"></span><span style="font-family:'DM Mono',monospace;font-size:9px;color:var(--cream3)">UK/Europe</span></span>
-        <span style="display:inline-flex;align-items:center;gap:5px"><span style="width:10px;height:10px;background:#5aaa78;display:inline-block;border-radius:1px"></span><span style="font-family:'DM Mono',monospace;font-size:9px;color:var(--cream3)">Стипендии</span></span>
-        <span style="display:inline-flex;align-items:center;gap:5px"><span style="width:10px;height:10px;background:#9b6fc4;display:inline-block;border-radius:1px"></span><span style="font-family:'DM Mono',monospace;font-size:9px;color:var(--cream3)">Тесты/Прочее</span></span>
+        <span style="font-size:9px;color:var(--cream3);letter-spacing:0.1em">ЛЕГЕНДА:</span>
+        <span style="display:inline-flex;align-items:center;gap:5px"><span style="width:10px;height:10px;background:#e05050;display:inline-block;border-radius:1px"></span><span style="font-size:9px;color:var(--cream3)">EA/ED</span></span>
+        <span style="display:inline-flex;align-items:center;gap:5px"><span style="width:10px;height:10px;background:#c9a84c;display:inline-block;border-radius:1px"></span><span style="font-size:9px;color:var(--cream3)">Regular</span></span>
+        <span style="display:inline-flex;align-items:center;gap:5px"><span style="width:10px;height:10px;background:#4a9ec4;display:inline-block;border-radius:1px"></span><span style="font-size:9px;color:var(--cream3)">UK/Europe</span></span>
+        <span style="display:inline-flex;align-items:center;gap:5px"><span style="width:10px;height:10px;background:#5aaa78;display:inline-block;border-radius:1px"></span><span style="font-size:9px;color:var(--cream3)">Стипендии</span></span>
+        <span style="display:inline-flex;align-items:center;gap:5px"><span style="width:10px;height:10px;background:#9b6fc4;display:inline-block;border-radius:1px"></span><span style="font-size:9px;color:var(--cream3)">Тесты/Прочее</span></span>
       </div>
       <div id="cal-grid"></div>
     </div>
@@ -1673,8 +1675,8 @@
   <section id="section-cloudsave" class="section">
     <div style="max-width:680px;margin:0 auto;padding:40px">
       <div style="text-align:center;margin-bottom:32px">
-        <div style="display:inline-flex;align-items:center;gap:8px;background:rgba(201,168,76,0.08);border:1px solid rgba(201,168,76,0.3);color:var(--gold3);font-family:'DM Mono',monospace;font-size:9px;letter-spacing:0.2em;padding:7px 16px;margin-bottom:14px">☁ РЕЗЕРВНАЯ КОПИЯ</div>
-        <h1 style="font-family:'Playfair Display',serif;font-size:32px;color:var(--cream);margin-bottom:8px">Сохрани свой <em style="background:linear-gradient(135deg,var(--gold),var(--gold2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">прогресс</em></h1>
+        <div style="display:inline-flex;align-items:center;gap:8px;background:rgba(201,168,76,0.08);border:1px solid rgba(201,168,76,0.3);color:var(--gold3);font-size:9px;letter-spacing:0.2em;padding:7px 16px;margin-bottom:14px">☁ РЕЗЕРВНАЯ КОПИЯ</div>
+        <h1 style="font-size:32px;color:var(--cream);margin-bottom:8px">Сохрани свой <em style="background:linear-gradient(135deg,var(--gold),var(--gold2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">прогресс</em></h1>
         <p style="color:var(--cream3);font-size:14px;font-style:italic">Экспортируй данные как код — восстанови на любом устройстве</p>
       </div>
       <div style="display:grid;gap:16px">
@@ -1682,11 +1684,11 @@
           <div style="position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--gold3),transparent)"></div>
           <div class="section-label" style="margin-bottom:12px">📤 Экспорт</div>
           <p style="font-size:13px;color:var(--cream3);margin-bottom:16px;line-height:1.6">Создай код сохранения — скопируй его в заметки. Используй для восстановления на любом устройстве.</p>
-          <button onclick="exportData()" style="background:linear-gradient(135deg,var(--gold3),var(--gold));color:var(--bg);font-family:'Cinzel',serif;font-size:11px;letter-spacing:0.15em;padding:13px;border:none;cursor:pointer;width:100%">📤 СОЗДАТЬ КОД СОХРАНЕНИЯ</button>
+          <button onclick="exportData()" style="background:linear-gradient(135deg,var(--gold3),var(--gold));color:var(--bg);font-size:11px;letter-spacing:0.15em;padding:13px;border:none;cursor:pointer;width:100%">📤 СОЗДАТЬ КОД СОХРАНЕНИЯ</button>
           <div id="export-output" style="display:none;margin-top:14px">
-            <div style="font-family:'DM Mono',monospace;font-size:8px;color:var(--cream3);margin-bottom:6px;letter-spacing:0.1em">КОД СОХРАНЕНИЯ — СКОПИРУЙ:</div>
-            <textarea id="export-code" style="width:100%;background:var(--bg);border:1px solid var(--border);color:var(--gold3);font-family:'DM Mono',monospace;font-size:9px;padding:10px;min-height:90px;resize:none;box-sizing:border-box" readonly></textarea>
-            <button onclick="copyExportCode()" style="margin-top:6px;background:transparent;border:1px solid var(--gold3);color:var(--gold3);font-family:'DM Mono',monospace;font-size:9px;padding:7px 14px;cursor:pointer">📋 СКОПИРОВАТЬ</button>
+            <div style="font-size:8px;color:var(--cream3);margin-bottom:6px;letter-spacing:0.1em">КОД СОХРАНЕНИЯ — СКОПИРУЙ:</div>
+            <textarea id="export-code" style="width:100%;background:var(--bg);border:1px solid var(--border);color:var(--gold3);font-size:9px;padding:10px;min-height:90px;resize:none;box-sizing:border-box" readonly></textarea>
+            <button onclick="copyExportCode()" style="margin-top:6px;background:transparent;border:1px solid var(--gold3);color:var(--gold3);font-size:9px;padding:7px 14px;cursor:pointer">📋 СКОПИРОВАТЬ</button>
           </div>
         </div>
         <div style="background:var(--bg1);border:1px solid var(--border);padding:24px;position:relative">
@@ -1694,14 +1696,14 @@
           <div class="section-label" style="margin-bottom:12px">📥 Импорт</div>
           <p style="font-size:13px;color:var(--cream3);margin-bottom:14px;line-height:1.6">Вставь сохранённый код — восстанови весь прогресс: профиль, трекер, чеклист.</p>
           <textarea id="import-code" class="form-textarea" style="min-height:90px" placeholder="Вставь код сохранения..."></textarea>
-          <button onclick="importData()" style="background:linear-gradient(135deg,#2a6a2a,#5aaa78);color:#fff;font-family:'Cinzel',serif;font-size:11px;letter-spacing:0.15em;padding:12px;border:none;cursor:pointer;width:100%;margin-top:10px">📥 ВОССТАНОВИТЬ ДАННЫЕ</button>
-          <div id="import-msg" style="display:none;margin-top:10px;padding:10px;font-family:'DM Mono',monospace;font-size:10px;letter-spacing:0.1em"></div>
+          <button onclick="importData()" style="background:linear-gradient(135deg,#2a6a2a,#5aaa78);color:#fff;font-size:11px;letter-spacing:0.15em;padding:12px;border:none;cursor:pointer;width:100%;margin-top:10px">📥 ВОССТАНОВИТЬ ДАННЫЕ</button>
+          <div id="import-msg" style="display:none;margin-top:10px;padding:10px;font-size:10px;letter-spacing:0.1em"></div>
         </div>
         <div style="background:var(--bg1);border:1px solid var(--border);padding:24px;position:relative">
           <div style="position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,#9b6fc4,transparent)"></div>
           <div class="section-label" style="margin-bottom:12px">📄 Паспорт абитуриента PDF</div>
           <p style="font-size:13px;color:var(--cream3);margin-bottom:14px;line-height:1.6">Полный профиль: онбординг, прогресс трекера, чеклист — в красивом PDF для консультанта.</p>
-          <button onclick="exportProfilePDF()" style="background:linear-gradient(135deg,#5a2d8a,#9b6fc4);color:#fff;font-family:'Cinzel',serif;font-size:11px;letter-spacing:0.15em;padding:12px;border:none;cursor:pointer;width:100%">📄 СКАЧАТЬ ПАСПОРТ АБИТУРИЕНТА</button>
+          <button onclick="exportProfilePDF()" style="background:linear-gradient(135deg,#5a2d8a,#9b6fc4);color:#fff;font-size:11px;letter-spacing:0.15em;padding:12px;border:none;cursor:pointer;width:100%">📄 СКАЧАТЬ ПАСПОРТ АБИТУРИЕНТА</button>
         </div>
       </div>
     </div>
@@ -1717,7 +1719,7 @@
     if (window.Chart) {
       Chart.defaults.color = '#a09880';
       Chart.defaults.borderColor = 'rgba(255,255,255,0.06)';
-      Chart.defaults.font.family = "'DM Mono', monospace";
+      // (font removed)
     }
   });
 const PASSWORD = 'entrium2025';
